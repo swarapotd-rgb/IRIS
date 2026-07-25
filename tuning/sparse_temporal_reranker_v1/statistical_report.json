@@ -1,0 +1,99 @@
+{
+  "bootstrap_seed": 20260725,
+  "n_boot": 2000,
+  "cluster_unit": "video",
+  "vs_A": {
+    "F": {
+      "gold_at_4": {
+        "n_paired": 2685,
+        "n_videos": 450,
+        "delta": 0.00037243947858472997,
+        "ci_lo": -0.004883546205860256,
+        "ci_hi": 0.00576036866359447,
+        "significant": false,
+        "bootstrap_seed": 20260725,
+        "n_boot": 2000,
+        "cluster": "video"
+      },
+      "gold_at_1": {
+        "n_paired": 2685,
+        "n_videos": 450,
+        "delta": 0.00186219739292365,
+        "ci_lo": -0.003257328990228013,
+        "ci_hi": 0.006797583081570997,
+        "significant": false,
+        "bootstrap_seed": 20260725,
+        "n_boot": 2000,
+        "cluster": "video"
+      },
+      "mIoP": {
+        "n_paired": 2685,
+        "n_videos": 450,
+        "delta": -0.0006909956296932104,
+        "ci_lo": -0.003661670448205965,
+        "ci_hi": 0.0022808668301716978,
+        "significant": false,
+        "bootstrap_seed": 20260725,
+        "n_boot": 2000,
+        "cluster": "video"
+      },
+      "mIoU": {
+        "n_paired": 2685,
+        "n_videos": 450,
+        "delta": 7.4503444373602e-05,
+        "ci_lo": -0.001859061214342815,
+        "ci_hi": 0.0020407762214657977,
+        "significant": false,
+        "bootstrap_seed": 20260725,
+        "n_boot": 2000,
+        "cluster": "video"
+      }
+    },
+    "G": {
+      "gold_at_4": {
+        "n_paired": 2685,
+        "n_videos": 450,
+        "delta": -0.04022346368715084,
+        "ci_lo": -0.04988830975428146,
+        "ci_hi": -0.030359126249537207,
+        "significant": true,
+        "bootstrap_seed": 20260725,
+        "n_boot": 2000,
+        "cluster": "video"
+      },
+      "gold_at_1": {
+        "n_paired": 2685,
+        "n_videos": 450,
+        "delta": -0.0022346368715083797,
+        "ci_lo": -0.014150943396226415,
+        "ci_hi": 0.008879023307436182,
+        "significant": false,
+        "bootstrap_seed": 20260725,
+        "n_boot": 2000,
+        "cluster": "video"
+      },
+      "mIoP": {
+        "n_paired": 2685,
+        "n_videos": 450,
+        "delta": 0.004455291523538626,
+        "ci_lo": -0.001318050096035279,
+        "ci_hi": 0.010168155577212385,
+        "significant": false,
+        "bootstrap_seed": 20260725,
+        "n_boot": 2000,
+        "cluster": "video"
+      },
+      "mIoU": {
+        "n_paired": 2685,
+        "n_videos": 450,
+        "delta": 0.003519147943097651,
+        "ci_lo": -0.0004113120024330914,
+        "ci_hi": 0.00752148954353776,
+        "significant": false,
+        "bootstrap_seed": 20260725,
+        "n_boot": 2000,
+        "cluster": "video"
+      }
+    }
+  }
+}

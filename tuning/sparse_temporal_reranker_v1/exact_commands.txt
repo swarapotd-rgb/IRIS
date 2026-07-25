@@ -1,0 +1,23 @@
+# Phase 1-2 unit tests
+python3 -m pytest tests/test_query_reformulation_v3.py tests/test_temporal_traversal_safe.py -q
+
+# Stage 1 smoke test (5 deterministic val_tune videos, 37 questions)
+python3 scripts/sparse_temporal_reranker_eval.py --arms A,F,G --limit-videos 5 --out-suffix _smoke
+
+# Parser audit over all val_tune questions + stratified human-review sample
+python3 scripts/sparse_temporal_reranker_parser_audit.py
+
+# Stage 2 full val_tune retrieval + grounding (2685 questions, 450 videos)
+python3 scripts/sparse_temporal_reranker_eval.py --arms A,F,G
+
+# Metrics, breakdowns, video-clustered bootstrap (seed 20260725, 2000 resamples)
+python3 scripts/sparse_temporal_reranker_report.py
+
+# Fairness invariants against the committed raw outputs
+python3 -m pytest tests/test_sparse_temporal_reranker_fairness.py -q
+
+# Full suite
+python3 -m pytest tests/ -q
+
+# NOT RUN, deliberately: arms H/I/J (see adapter_status.json) and any
+# val_confirm evaluation.

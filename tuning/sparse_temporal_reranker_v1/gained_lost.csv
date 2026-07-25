@@ -1,0 +1,222 @@
+arm,video,qid,type_code,question,change,A_first_gold_rank,arm_first_gold_rank,A_iop,arm_iop,parser_status,traversal_active,relation
+F,4138579400,6,TN,what did the boy do after touching his spectacles,gained,,0,0.529612,0.529612,clause_extracted,False,AFTER
+F,7114553643,1,TN,what did the man in brown vest do after he stood up in the middle of the video,gained,,2,0.0,0.0,clause_extracted,False,AFTER
+F,6025238212,1,CW,why did the girl in gold hold onto her party eye masks in the middle of the video,gained,,1,0.16878,0.176364,head_event,False,CAUSE
+F,6754608321,4,CW,why did the girl touched the baby s arm at the beginning of the video,lost,3,,0.0,0.0,head_event,False,CAUSE
+F,5056964274,7,CW,why did the boy move hands closer to mouth,lost,1,,0.0,0.0,head_event,False,CAUSE
+F,3429509208,7,CH,how did the boy move himself nearer to the camera,lost,1,,0.235398,0.235398,head_event,False,MANNER
+F,3026084730,6,CW,why did the man in the middle point upwards and moved his hands in the middle of the video,lost,3,,0.0,0.0,head_event,False,CAUSE
+F,5945172741,7,CH,how did the man show affection to the girl when he held her,lost,1,,0.0,0.0,clause_extracted,False,MANNER
+F,4036955771,7,TN,what did the girl in red and blue do after walking in front of the performers,gained,,2,0.0,0.0,clause_extracted,False,AFTER
+F,6168295272,9,CW,why did the lady in blue tapped on the girl in blue,lost,3,,0.154053,0.154053,head_event,False,CAUSE
+F,4336654741,2,CW,why does the baby hold the lady s hands in between,lost,2,,0.7975,0.0,head_event,False,CAUSE
+F,6642268693,4,CH,how did the dog show that it wants the owner s attention,gained,,2,0.0,0.0,head_event,False,MANNER
+F,4761953886,2,CW,why does the girl put her hand on the dog in the middle,lost,2,,0.0,0.0,head_event,False,CAUSE
+F,5561024834,2,CW,why does the boy tuck his head down on the bed near the end,gained,,3,0.0,0.702652,head_event,False,CAUSE
+F,7416295940,6,TN,what does the adult do after adjusting the position of the toy car,gained,,1,0.0,0.619477,clause_extracted,False,AFTER
+F,6078524411,6,CW,why is the baby raising his left arm up and down,gained,,0,0.396553,0.396553,head_event,False,CAUSE
+F,3963997053,2,CW,why are there people standing behind the barricade when the car drove past them,gained,,0,0.0,0.632182,clause_extracted,False,CAUSE
+F,7308042410,9,CW,why did the man take the girl s hands at the end of the video,gained,,3,0.0,0.0,head_event,False,CAUSE
+F,2809330695,8,TN,what happens to the tiger toy after the baby kicks it,gained,,3,0.0,0.0,clause_extracted,False,AFTER
+F,6188449000,4,TC,what was the boy doing with the paper,lost,3,,0.0,0.0,head_event,False,DURING
+F,6727904179,7,CH,how did the two men indoors made themselves comfortable,gained,,1,0.0,0.0,head_event,False,MANNER
+F,6239210933,0,CH,how does the child in blue interact with the pink toy,lost,3,,0.306712,0.306712,head_event,False,MANNER
+F,6143391925,0,CW,why did the woman reach out her hands at the beginning of the video,gained,,3,0.0,0.0,head_event,False,CAUSE
+F,4612723694,1,CW,why is the man holding a stick on his left hand,gained,,0,0.0,0.0,head_event,False,CAUSE
+F,5561024834,8,TN,what does the boy do after getting up from the floor,gained,,1,0.0,0.0,clause_extracted,False,AFTER
+F,11871253306,1,CW,why did the men pass a small item to the child in the beginning,gained,,3,0.0,0.0,head_event,False,CAUSE
+F,6592821115,1,CW,why did the woman try to remove baby s grip off her finger,lost,0,,0.901515,0.0,head_event,False,CAUSE
+F,9088819598,7,CW,why was the baby s chair rocking,gained,,3,0.404875,0.404875,head_event,False,CAUSE
+F,4838113006,6,TN,what does the lady do after picking up another bell from table b,lost,2,,0.0,0.0,clause_extracted,False,AFTER
+F,4465235803,3,TN,what does the lady do after shaving for a while at the start,lost,3,,0.426439,0.426439,clause_extracted,False,AFTER
+F,7059877301,6,CW,why did the white dog approached the light brown dog,lost,0,,0.740492,0.0,head_event,False,CAUSE
+F,6037747123,5,CH,how do the two ladies block the sun from shining at their eyes,lost,0,,0.0,0.0,head_event,False,MANNER
+F,5549243726,8,CH,how does the girl get the baby s attention at the beginning,lost,2,,0.0,0.0,head_event,False,MANNER
+F,4127497265,8,CW,why is the baby looking down in the middle,lost,3,,0.0,0.0,head_event,False,CAUSE
+F,4444192938,5,TN,what does the girl in red do after reaching the bottom of the stairs,lost,3,,0.0,0.0,clause_extracted,False,AFTER
+F,5561024834,10,CH,how does the boy move on the floor,gained,,1,0.0,0.0,head_event,False,MANNER
+F,5133787349,3,CH,how does the man in black to go on stage,lost,3,,0.0,0.0,head_event,False,MANNER
+F,6025238212,4,TN,what does the girl in gold do after raising her right arm up at the start,gained,,3,0.16878,0.16878,clause_extracted,False,AFTER
+F,3383804222,1,CW,why did the older panda arch its head back when the baby panda stretches her legs repetitively on the older s belly,lost,3,,0.0,0.0,clause_extracted,False,CAUSE
+F,4949582792,2,CW,why was the girl stretching her arms out to the pram after she rocked the pram,gained,,3,0.0,0.477273,clause_extracted,False,CAUSE
+F,4260763967,6,CH,how did the boy in yellow build his toy,lost,1,,0.0,0.0,head_event,False,MANNER
+F,3869005094,4,TC,what did the two outer person do when the two inner person step forward,gained,,3,0.0,0.475659,clause_extracted,False,DURING
+F,5854324479,0,CW,why did the man in dark brown move backwards,gained,,3,0.0,0.0,head_event,False,CAUSE
+G,4882821564,1,CW,why did the boy pick up one present from the group of them and move to the sofa,lost,3,,0.48797,0.48797,head_event,True,CAUSE
+G,7533369046,6,TC,what was the baby doing to the white box,lost,3,,0.106061,0.106061,head_event,True,DURING
+G,3711681535,3,CW,why does the woman swing her legs while swinging on the handle,gained,,0,0.340992,0.340992,clause_extracted,True,CAUSE
+G,4138579400,6,TN,what did the boy do after touching his spectacles,gained,,0,0.529612,0.529612,clause_extracted,True,AFTER
+G,4010069381,1,CW,why did the lady bend towards the man with brown vest,gained,,0,0.179636,0.179636,head_event,True,CAUSE
+G,7114553643,1,TN,what did the man in brown vest do after he stood up in the middle of the video,gained,,3,0.0,0.0,clause_extracted,True,AFTER
+G,6025238212,1,CW,why did the girl in gold hold onto her party eye masks in the middle of the video,gained,,2,0.16878,0.176364,head_event,True,CAUSE
+G,6078524411,7,CW,why did the baby put his head on the table,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,6754608321,4,CW,why did the girl touched the baby s arm at the beginning of the video,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,4882821564,4,TC,how did the boy react when he entered the room at the start,lost,3,,0.0,0.0,clause_extracted,True,DURING
+G,6244675392,0,CW,why does the adult put out her hand towards the baby at the beginning of the video,gained,,1,0.257576,0.257576,head_event,True,CAUSE
+G,4264435046,6,TC,what did the stray dog do as the woman was running back with her dog at the end,lost,3,,0.070636,0.070636,clause_extracted,True,DURING
+G,4378803532,7,TN,what did the man do after the boy in stripped asked for an exchange of sparkles,lost,2,,0.0,0.0,clause_extracted,True,AFTER
+G,5056964274,7,CW,why did the boy move hands closer to mouth,lost,1,,0.0,0.0,head_event,True,CAUSE
+G,3429509208,7,CH,how did the boy move himself nearer to the camera,lost,1,,0.235398,0.387064,head_event,True,MANNER
+G,8557532213,7,CH,how did the boy in blue interact with the ball in the middle of the video,lost,2,,0.364545,0.364545,head_event,True,MANNER
+G,3026084730,6,CW,why did the man in the middle point upwards and moved his hands in the middle of the video,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,5945172741,7,CH,how did the man show affection to the girl when he held her,lost,1,,0.0,0.0,clause_extracted,True,MANNER
+G,2679328607,11,TN,what does the girl do after every time the boy passes her the toy,lost,3,,0.116364,0.116364,clause_extracted,True,AFTER
+G,5766018720,3,TN,what did the baby do after she picked up the toy guitar,lost,3,,0.500371,0.0,clause_extracted,True,AFTER
+G,2925298951,1,CH,how do the women pose for the camera with their hands,gained,,0,0.412269,0.412269,head_event,True,MANNER
+G,2442307875,6,CW,why did the smallest girl at the outer right turn her head to her friends at the end of the video,gained,,0,0.0,0.0,head_event,True,CAUSE
+G,7605329840,7,TP,what was the girl in black doing before she stood up near the end,lost,3,,0.284621,0.284621,clause_extracted,True,BEFORE
+G,4036955771,7,TN,what did the girl in red and blue do after walking in front of the performers,gained,,3,0.0,0.0,clause_extracted,True,AFTER
+G,6168295272,9,CW,why did the lady in blue tapped on the girl in blue,lost,3,,0.154053,0.154053,head_event,False,CAUSE
+G,4336654741,2,CW,why does the baby hold the lady s hands in between,lost,2,,0.7975,0.0,head_event,True,CAUSE
+G,6183104292,2,CH,how does the tiger prevent the food from moving around in the middle of the video,lost,3,,0.0,0.0,head_event,True,MANNER
+G,3830567237,2,TN,what does the man in black do after letting the horse drink water at the start,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,5681946487,8,CH,how does the woman wash the boy,lost,2,,0.0,0.0,head_event,True,MANNER
+G,6879924118,2,CW,why are there so many cones nicely placed on the grass,gained,,0,0.473932,0.473932,head_event,True,CAUSE
+G,3526597179,6,TN,what did the lady in yellow do after talking to the lady in white,lost,2,,0.607636,0.323432,clause_extracted,True,AFTER
+G,6642268693,4,CH,how did the dog show that it wants the owner s attention,gained,,0,0.0,0.486364,head_event,True,MANNER
+G,5061117640,3,TN,what does the man in grey do after opening the door at the start,lost,3,,0.841977,0.0,clause_extracted,True,AFTER
+G,5919180502,3,TC,where does the person who was sitting in the chair walk to,lost,2,,0.0,0.0,head_event,True,DURING
+G,9217939684,8,TN,how does the woman in pink react after the baby falls down,lost,3,,0.350379,0.350379,clause_extracted,True,AFTER
+G,4671452046,5,CH,how did the lady in purple prevent the baby from falling when he bend down to stir the cup,lost,2,,1.0,0.0,clause_extracted,True,MANNER
+G,6754608321,7,TN,what did the girl do after she looked at the baby near the end of the video,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,8277866423,6,TN,what did the black dog do after barking at the brown dog,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,4761953886,2,CW,why does the girl put her hand on the dog in the middle,lost,2,,0.0,0.0,head_event,False,CAUSE
+G,9082180631,4,CH,how did two children in pink move forward,lost,2,,0.505832,0.0,head_event,True,MANNER
+G,4978714491,7,CH,how did the bus knew when to start moving,lost,3,,0.0,0.0,clause_extracted,True,MANNER
+G,3508407941,2,TC,how does the baby feel about the bouncing,lost,3,,0.0,0.0,head_event,True,DURING
+G,8740703217,2,TN,what does the baby do after picking up the food,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,3375218204,7,TN,what do the children do after the man lies down in the middle,lost,2,,0.0,0.0,clause_extracted,True,AFTER
+G,2829462646,7,CW,why is there a man in brown resting at the side of the wall when camera was panned to show the interior,lost,3,,0.300477,0.0,clause_extracted,True,CAUSE
+G,3526597179,8,TN,what did the lady in white do after the lady in yellow turned to the man,lost,3,,0.293098,0.293098,clause_extracted,True,AFTER
+G,4378803532,8,TN,what did the girl in red do after she approached the boy to look at the sparkles,lost,3,,0.762356,0.0,clause_extracted,True,AFTER
+G,6253433310,2,CW,why does the boy float up after going underneath water for some time,lost,3,,0.198257,0.198257,clause_extracted,True,CAUSE
+G,7416295940,3,TC,what does the baby do when the dog approaches him,lost,2,,0.0,0.0,clause_extracted,True,DURING
+G,5237219621,6,TN,what did the woman in black near the tv do after the woman in black spectacles spoke near the end,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,8024853715,0,CW,why does the child in multicolored dress move her hands,lost,3,,0.465699,0.465699,head_event,True,CAUSE
+G,5635265624,3,CW,why is the baby touching the bag beside her,lost,2,,0.147106,0.147106,head_event,True,CAUSE
+G,5116088152,7,TN,how does the baby react after the adult point at the banana,gained,,0,0.458727,0.458727,clause_extracted,True,AFTER
+G,3376544720,8,TN,what does the man in striped do after the man in black gets on the bull,lost,2,,0.909091,0.0,clause_extracted,True,AFTER
+G,7416295940,6,TN,what does the adult do after adjusting the position of the toy car,gained,,2,0.0,0.391977,clause_extracted,True,AFTER
+G,2623954636,0,TN,what did the boy do after he got up from the fall in the middle of the video,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,4846820256,5,CW,why is the camera lens blocked near the end of the video,gained,,0,0.340909,0.340909,head_event,True,CAUSE
+G,4488066715,1,CW,why does the adult try to keep the other hand of the baby away from the table,lost,2,,0.0,0.0,head_event,True,CAUSE
+G,6516459343,1,CW,why did the man in green hold up the shoe as he is speaking,lost,2,,0.0,0.0,clause_extracted,True,CAUSE
+G,4006608424,6,TN,what does the man do after getting off the swing near the middle,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,3270490566,4,TN,what does the man playing the drum do after finishing the song,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,6078524411,6,CW,why is the baby raising his left arm up and down,gained,,0,0.396553,0.396553,head_event,False,CAUSE
+G,7771650716,6,CW,why did the man in white pull the leash of the grey dog,lost,2,,0.144848,0.144848,head_event,True,CAUSE
+G,3963997053,2,CW,why are there people standing behind the barricade when the car drove past them,gained,,0,0.0,0.632182,clause_extracted,True,CAUSE
+G,7308042410,9,CW,why did the man take the girl s hands at the end of the video,gained,,1,0.0,0.0,head_event,True,CAUSE
+G,5308503740,2,TP,what did the black and white rabbit do before climbing towards the tree,lost,2,,1.0,0.0,clause_extracted,True,BEFORE
+G,6188449000,4,TC,what was the boy doing with the paper,lost,3,,0.0,0.0,head_event,True,DURING
+G,4859057828,5,CH,how did the three ladies pose for a picture,lost,3,,0.25,0.0,head_event,True,MANNER
+G,6168295272,3,CH,how does the lady in black attract the child in the blue dress attention,lost,3,,0.295455,0.0,head_event,True,MANNER
+G,7164729910,1,CW,why does the boy move the toy car backwards at the start of the video,lost,3,,0.033399,0.033399,head_event,True,CAUSE
+G,8080432373,4,CW,why did the man lean towards the baby girl near the end,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,3741143820,8,TN,how did the guy in the audience respond after the two guy performers finished talking at the end of the video,lost,2,,0.409091,0.409091,clause_extracted,True,AFTER
+G,6727904179,7,CH,how did the two men indoors made themselves comfortable,gained,,2,0.0,0.0,head_event,True,MANNER
+G,6239210933,0,CH,how does the child in blue interact with the pink toy,lost,3,,0.306712,0.306712,head_event,True,MANNER
+G,4127497265,6,TN,what did the baby do after the first time chewing the toy,lost,2,,0.0,0.0,clause_extracted,True,AFTER
+G,3846475848,4,TN,what does the man do after cleaning one side of the ferret,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,4935987905,3,CW,why is the brown dog bending down to the floor as it moved around,lost,3,,0.4525,0.4525,clause_extracted,True,CAUSE
+G,9473479950,6,TC,what did the lady do when the baby first looked into the camera in the middle of the video,lost,3,,0.471191,0.471191,clause_extracted,True,DURING
+G,4915733559,7,CH,how did the baby get onto higher height to look at the phone,lost,3,,0.0,0.0,head_event,True,MANNER
+G,4896969617,3,CW,why did the boy run off from the slide in the middle of the video,lost,3,,0.296659,0.296659,head_event,True,CAUSE
+G,5297811305,4,CH,how does the woman help the baby at the start,lost,3,,0.0,0.0,head_event,True,MANNER
+G,3462517143,5,TN,where does the white dog run to after he finishes drinking the water,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,6772999108,3,TC,what did the boy do when the girl started clapping,lost,3,,0.0,0.0,clause_extracted,True,DURING
+G,2793806282,11,CH,how did the black dog move itself towards the blue toy,lost,3,,0.762045,0.0,head_event,True,MANNER
+G,4612723694,1,CW,why is the man holding a stick on his left hand,gained,,0,0.0,0.0,head_event,True,CAUSE
+G,5561024834,8,TN,what does the boy do after getting up from the floor,gained,,1,0.0,0.0,clause_extracted,True,AFTER
+G,5056964274,4,CH,how did the person helped the baby to drink from the drink,lost,2,,0.0,0.0,head_event,True,MANNER
+G,6592821115,1,CW,why did the woman try to remove baby s grip off her finger,lost,0,,0.901515,0.0,head_event,True,CAUSE
+G,3861485381,5,CH,how did the leopards move around,lost,2,,0.0,0.0,head_event,True,MANNER
+G,10042935613,4,CW,why does the boy in red touch the food with his bare left hand while eating,lost,3,,0.786028,0.0,clause_extracted,True,CAUSE
+G,9082180631,9,CW,why did the boy in green turned back at the beginning of the video,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,5116088152,8,TN,what does the baby do after picking the banana up,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,4838113006,6,TN,what does the lady do after picking up another bell from table b,lost,2,,0.0,0.0,clause_extracted,True,AFTER
+G,5662041273,4,CW,why was there a light flashing on the controller when the boy pressed on it,lost,2,,1.0,0.0,clause_extracted,True,CAUSE
+G,4251505427,4,CW,why did the child with beanie stretch his arms out near the end,gained,,1,0.278682,0.278682,head_event,True,CAUSE
+G,5129152550,0,CW,why is the man using his hand gestures occasionally,lost,3,,0.702682,0.0,head_event,True,CAUSE
+G,6642268693,3,CW,why did the dog bite on to the human s hand halfway through the video,gained,,0,0.318182,0.431818,head_event,True,CAUSE
+G,4846820256,4,TN,what did the man do to the loose rope after the boy pulled the rope in the middle of the video,lost,3,,0.431818,0.431818,clause_extracted,True,AFTER
+G,6898821807,4,CW,why does the baby push the right hand of the boy away at the end of the video,gained,,1,0.420371,0.420371,head_event,True,CAUSE
+G,4518113460,9,TN,what does the adult do after the baby starts crawling away,lost,3,,1.0,0.0,clause_extracted,True,AFTER
+G,5328616848,1,CW,why did the boy touch his mouth,lost,1,,0.636364,0.384455,head_event,True,CAUSE
+G,2925298951,8,CW,why do the women put up their hands near their faces,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,4465235803,3,TN,what does the lady do after shaving for a while at the start,lost,3,,0.426439,0.426439,clause_extracted,True,AFTER
+G,3861485381,6,TN,what did the man in cap do after the animals went in the forest,lost,2,,0.0,0.0,clause_extracted,True,AFTER
+G,3960291106,2,CW,why does the woman in black shift backwards near the end of the video,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,8464056582,1,CW,why did the baby struggle to crawl on the floor,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,7059877301,6,CW,why did the white dog approached the light brown dog,lost,0,,0.740492,0.0,head_event,True,CAUSE
+G,8403741210,5,TN,what does the girl sitting on the left do after supporting her head with her hands for a while,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,8495272210,1,CH,how does the lady in yellow change direction,lost,3,,1.0,0.0,head_event,True,MANNER
+G,5061117640,8,TN,what does the man in grey do after pointing somewhere at the end,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,6037747123,5,CH,how do the two ladies block the sun from shining at their eyes,lost,0,,0.0,0.0,head_event,True,MANNER
+G,7288107396,4,TN,what did the boy do after he approached the present,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,6188449000,5,TN,what did the boy do after he put the paper on his body,lost,3,,0.462121,0.462121,clause_extracted,True,AFTER
+G,2573424030,9,TN,what does the man with the food do after seeing the dog standing on two legs,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,5549243726,8,CH,how does the girl get the baby s attention at the beginning,lost,2,,0.0,0.0,head_event,True,MANNER
+G,8224504302,8,TN,what does the man in black do after putting on his spectacles,lost,2,,0.840909,0.0,clause_extracted,True,AFTER
+G,3508459605,5,TN,what does the baby do after holding the man s hands,lost,1,,0.0,0.0,clause_extracted,True,AFTER
+G,5445581571,8,CW,why did the black spotted dog looked up at the end of the video,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,2736413196,7,TN,what did the man in black do after the man in green turned the camera towards himself,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,4127497265,8,CW,why is the baby looking down in the middle,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,4564478328,0,CH,how does the lioness standing in front drink water at the start of the video,lost,3,,0.0,0.0,head_event,True,MANNER
+G,2454242177,5,CW,why did the baby kneel down on the floor after walking for some distance with the toy car,lost,3,,0.0,0.0,clause_extracted,True,CAUSE
+G,4024008346,2,CH,how did the child use the yellow balloon in the middle of the video,lost,2,,0.0,0.0,head_event,True,MANNER
+G,5333075105,2,CH,how did the man carry his things along with him,gained,,1,0.378205,0.378205,head_event,True,MANNER
+G,4444192938,5,TN,what does the girl in red do after reaching the bottom of the stairs,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,8080432373,2,CW,why did the baby look down at the chair in the beginning,lost,3,,0.432955,0.432955,head_event,True,CAUSE
+G,4542882771,6,TN,what does the baby do after seeing the food spill on the table,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,3063380173,4,TC,how did the kitten inside the container react when the kitten outside was moving its paws at the start of the video,lost,2,,0.0,0.0,clause_extracted,True,DURING
+G,8107573462,11,CW,why did the boy stay on the ground after falling down,lost,3,,0.372629,0.372629,clause_extracted,True,CAUSE
+G,4333544549,1,CW,why does man in white bend down,lost,2,,0.0,0.0,head_event,True,CAUSE
+G,5561024834,10,CH,how does the boy move on the floor,gained,,1,0.0,0.0,head_event,True,MANNER
+G,4671452046,12,CW,why did the lady in green looked at the baby in her hand for a while,lost,2,,0.0,0.0,head_event,True,CAUSE
+G,4671452046,2,CW,why the cup toppled,lost,2,,0.638864,0.0,no_structure,True,CAUSE
+G,5133787349,3,CH,how does the man in black to go on stage,lost,3,,0.0,0.0,head_event,True,MANNER
+G,6516459343,7,TN,what does the man in white do after holding the shoe stably,lost,3,,0.144295,0.144295,clause_extracted,True,AFTER
+G,6300775954,7,TC,what did the lady do everytime she squat down,lost,2,,0.366053,0.366053,head_event,True,DURING
+G,2401167740,3,TP,what was the man doing before taking a drink from his cup,lost,2,,0.0,0.0,clause_extracted,True,BEFORE
+G,4882821564,5,TN,what did the woman do after the boy walked towards her with a present,lost,2,,0.0,0.0,clause_extracted,True,AFTER
+G,12682618843,4,CW,why did the dog move his paws and mouth forward after the middle part of the video,lost,2,,0.070197,0.070197,clause_extracted,True,CAUSE
+G,2834146886,3,CW,why did the white dog not go up the cushion that the black dog went up,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,9408800471,5,CW,why does the dog stand still next to the ball until the boy catches up with the dog near the end of the video,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,4671452046,10,TN,what did the lady in brown do after talking to the lady in purple,lost,3,,0.277977,0.277977,clause_extracted,True,AFTER
+G,3897746373,6,CW,why are the children on the plank when the girl in pink is swimming,lost,2,,0.0,0.0,clause_extracted,True,CAUSE
+G,8330342965,4,CW,why does the girl throw the paper airplane,lost,2,,0.361508,0.361508,head_event,True,CAUSE
+G,4825843801,4,TN,how do the other two penguins react after one penguin starts walking,gained,,0,0.295455,0.295455,clause_extracted,True,AFTER
+G,2442307875,5,TC,what was the smallest girl at the outer right doing at the end of the video,lost,3,,0.0,0.0,entity_only,True,DURING
+G,4419096437,3,TN,how does the cat react after being carressed by the person,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,3383804222,1,CW,why did the older panda arch its head back when the baby panda stretches her legs repetitively on the older s belly,lost,3,,0.0,0.0,clause_extracted,True,CAUSE
+G,5549243726,0,CW,why did the girl clap her hands at the beginning,gained,,0,0.468553,0.423053,head_event,True,CAUSE
+G,3943634344,3,TN,what did the lady do after the girl finished reciting the pictures on the book,lost,3,,0.449864,0.449864,clause_extracted,True,AFTER
+G,6168716346,9,TN,what does the boy with blue shirt do after looking at the box of crayons for a while at the end,lost,2,,0.804689,0.0,clause_extracted,True,AFTER
+G,4765717907,3,CW,why did the man carry the boy for the second time,lost,3,,0.693242,0.0,head_event,True,CAUSE
+G,4251505427,6,TN,what does the child with beanie do after pointing 1 finger up at the start,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,8575881495,6,TN,how does the girl react after turning to look at the woman in blue near the end,lost,2,,0.0,0.0,clause_extracted,True,AFTER
+G,4671452046,3,CW,why did the baby bend over to side,gained,,1,0.0,0.0,head_event,True,CAUSE
+G,6988748711,1,CW,why did the blue shirt woman touch her hair while walking toward the mud,lost,2,,0.179773,0.179773,clause_extracted,True,CAUSE
+G,2930782930,2,TN,what did the lady do after she bounced the baby at the end of the video,gained,,0,0.392341,0.392341,clause_extracted,True,AFTER
+G,8253302563,3,CW,why did the boy steer the wheel after pressing the horn,gained,,0,0.498106,0.498106,clause_extracted,True,CAUSE
+G,6786501294,3,CW,why does the boy blow out the candle on the cake,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,5445581571,6,TN,what did the white dog do after he looked at the black spotted dog,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,4765717907,5,TC,what did the boy do when the man carried him up to the pole,lost,2,,0.0,0.0,clause_extracted,True,DURING
+G,4260763967,6,CH,how did the boy in yellow build his toy,lost,1,,0.0,0.384614,head_event,True,MANNER
+G,3121571439,1,CW,why do the man in black and the woman in pink spin when they go under the arms of the other person,lost,3,,0.0,0.0,clause_extracted,True,CAUSE
+G,2833209794,6,CW,why does the person in yellow get onto the left side of escalator instead of the right like the rest,gained,,0,0.378143,0.378143,head_event,True,CAUSE
+G,5427285434,6,CW,why did the boy put his hand on his face after he got off the sofa,lost,3,,0.0,0.0,clause_extracted,True,CAUSE
+G,3375218204,10,TN,what does the man do after standing up at the end,lost,3,,0.0,0.0,clause_extracted,True,AFTER
+G,2696280239,2,CW,why did the man in black pull the rope at the beginning,gained,,0,0.355417,0.355417,head_event,True,CAUSE
+G,4674481985,1,CH,how did the person get  into water in the middle,lost,3,,0.315114,0.315114,head_event,True,MANNER
+G,3158022797,5,TC,what did the man in pink do that was different from the rest of the people in the middle,lost,3,,0.0,0.0,head_event,True,DURING
+G,4698622422,5,CW,why is the boy running after the ball,lost,3,,0.0,0.0,clause_extracted,True,CAUSE
+G,8107573462,10,TC,how did the boy react when he fell down on the ground,lost,3,,0.456045,0.456045,clause_extracted,True,DURING
+G,3869005094,4,TC,what did the two outer person do when the two inner person step forward,gained,,3,0.0,0.475659,clause_extracted,False,DURING
+G,5498331490,3,CW,why does the cat bend down towards the toilet bowl in the middle,lost,3,,0.0,0.0,head_event,True,CAUSE
+G,4132599924,1,CW,why does the man bend down near the end,gained,,0,0.464939,0.464939,head_event,True,CAUSE
+G,5349969207,4,TN,what did the brown dog do after it lie on the floor at the end of the video,gained,,0,0.379129,0.379129,clause_extracted,True,AFTER
+G,3171006258,1,CW,why did the man hold onto the pole as he stood up,lost,3,,0.151136,0.151136,clause_extracted,True,CAUSE
+G,3530231811,8,TN,what did the man in black do after he stepped backwards in the middle of the video,lost,2,,0.0,0.0,clause_extracted,True,AFTER
+G,8594314852,10,TN,what did the lady do after she stopped walking in the middle of the video,lost,1,,0.490144,0.421894,clause_extracted,True,AFTER

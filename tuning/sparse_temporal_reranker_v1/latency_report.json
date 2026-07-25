@@ -1,0 +1,88 @@
+{
+  "A": {
+    "n": 2685,
+    "median_retrieval_ms": 3.9573,
+    "p95_retrieval_ms": 4.939629999999999,
+    "mean_retrieval_ms": 5.077233854748603,
+    "max_ppr_calls": 1,
+    "max_text_embeddings": 1,
+    "mean_candidate_pool_size": 4.0,
+    "component_medians_ms": {},
+    "cold_cache": {
+      "median_ms": 3.739,
+      "p95_ms": 4.584,
+      "n": 202
+    },
+    "warm_cache": {
+      "median_ms": 3.9573,
+      "p95_ms": 4.939629999999999,
+      "n": 2685
+    }
+  },
+  "F": {
+    "n": 2685,
+    "median_retrieval_ms": 4.8766,
+    "p95_retrieval_ms": 6.30607,
+    "mean_retrieval_ms": 5.068072290502793,
+    "max_ppr_calls": 1,
+    "max_text_embeddings": 3,
+    "mean_candidate_pool_size": 15.976163873370577,
+    "component_medians_ms": {
+      "t_parse_ms": 0.064,
+      "t_embed_ms": 2.8632,
+      "t_retrieve_ms": 1.4389,
+      "t_adapter_ms": 0.0002,
+      "t_traverse_ms": 0.0029
+    },
+    "cold_cache": {
+      "median_ms": 4.76,
+      "p95_ms": 6.201,
+      "n": 202
+    },
+    "warm_cache": {
+      "median_ms": 4.8766,
+      "p95_ms": 6.30607,
+      "n": 2685
+    }
+  },
+  "G": {
+    "n": 2685,
+    "median_retrieval_ms": 5.0028,
+    "p95_retrieval_ms": 6.49692,
+    "mean_retrieval_ms": 5.125820335195531,
+    "max_ppr_calls": 1,
+    "max_text_embeddings": 3,
+    "mean_candidate_pool_size": 15.976163873370577,
+    "component_medians_ms": {
+      "t_parse_ms": 0.0628,
+      "t_embed_ms": 2.862,
+      "t_retrieve_ms": 1.4451,
+      "t_adapter_ms": 0.0002,
+      "t_traverse_ms": 0.1487
+    },
+    "cold_cache": {
+      "median_ms": 4.978,
+      "p95_ms": 6.492,
+      "n": 202
+    },
+    "warm_cache": {
+      "median_ms": 5.0028,
+      "p95_ms": 6.49692,
+      "n": 2685
+    }
+  },
+  "_notes": {
+    "cold_cache": "each arm run alone in a FRESH process over the same 30-video subset (202 questions), empty CLIP text-embedding cache",
+    "warm_cache": "full 2685-question run; arms share one process, so A ran coldest and F/G on a warmed embedding cache -- reported this way deliberately rather than hidden",
+    "excluded_from_retrieval_ms": "index load from disk (happens before the timer)",
+    "hardware": "same box, same execution mode for every arm: CPU PPR/traversal, GPU CLIP text embedding",
+    "targets": {
+      "median_ms": 10,
+      "p95_ms": 15
+    },
+    "targets_met": true,
+    "adapter_params": null,
+    "adapter_model_size_bytes": null,
+    "adapter_note": "no adapter was trained -- see adapter_status.json"
+  }
+}

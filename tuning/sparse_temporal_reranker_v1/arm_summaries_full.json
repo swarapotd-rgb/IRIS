@@ -1,0 +1,170 @@
+{
+  "A": {
+    "n": 2685,
+    "gold_at_1": {
+      "n": 816,
+      "d": 2685,
+      "rate": 0.3039106145251397
+    },
+    "gold_at_2": {
+      "n": 1113,
+      "d": 2685,
+      "rate": 0.4145251396648045
+    },
+    "gold_at_4": {
+      "n": 1424,
+      "d": 2685,
+      "rate": 0.5303538175046555
+    },
+    "mrr": 0.39360645561762875,
+    "mIoP": 0.297819714053369,
+    "mIoU": 0.1608658073672957,
+    "IoP@0.5": {
+      "n": 808,
+      "d": 2685,
+      "rate": 0.30093109869646184
+    },
+    "IoU@0.5": {
+      "n": 320,
+      "d": 2685,
+      "rate": 0.1191806331471136
+    },
+    "mean_span_width": 4.287401261080075,
+    "median_span_width": 4.4,
+    "mean_center_error_s": 12.032830986021965,
+    "median_center_error_s": 7.430458000000002,
+    "zero_width_count": 0,
+    "invalid_span_count": 0,
+    "boundary_clipped_count": 0,
+    "mean_top_k_spread_s": 17.39121063612663,
+    "median_top_k_spread_s": 11.5115,
+    "traversal_activation": {
+      "n": 0,
+      "d": 2685,
+      "rate": 0.0
+    },
+    "mean_original_preserved": 4.0,
+    "adapter_fallback": {
+      "n": 0,
+      "d": 2685,
+      "rate": 0.0
+    },
+    "median_retrieval_ms": 3.9573,
+    "p95_retrieval_ms": 4.939629999999999,
+    "mean_retrieval_ms": 5.077233854748603,
+    "max_ppr_calls": 1,
+    "max_text_embeddings": 1
+  },
+  "F": {
+    "n": 2685,
+    "gold_at_1": {
+      "n": 821,
+      "d": 2685,
+      "rate": 0.3057728119180633
+    },
+    "gold_at_2": {
+      "n": 1114,
+      "d": 2685,
+      "rate": 0.4148975791433892
+    },
+    "gold_at_4": {
+      "n": 1425,
+      "d": 2685,
+      "rate": 0.5307262569832403
+    },
+    "mrr": 0.3950031036623215,
+    "mIoP": 0.2971287184236758,
+    "mIoU": 0.16094031081166923,
+    "IoP@0.5": {
+      "n": 803,
+      "d": 2685,
+      "rate": 0.2990689013035382
+    },
+    "IoU@0.5": {
+      "n": 318,
+      "d": 2685,
+      "rate": 0.11843575418994413
+    },
+    "mean_span_width": 4.289569612662943,
+    "median_span_width": 4.4,
+    "mean_center_error_s": 12.06752222464281,
+    "median_center_error_s": 7.446799999999996,
+    "zero_width_count": 0,
+    "invalid_span_count": 0,
+    "boundary_clipped_count": 0,
+    "mean_top_k_spread_s": 17.49215888417132,
+    "median_top_k_spread_s": 11.745078,
+    "traversal_activation": {
+      "n": 0,
+      "d": 2685,
+      "rate": 0.0
+    },
+    "mean_original_preserved": 4.0,
+    "adapter_fallback": {
+      "n": 0,
+      "d": 2685,
+      "rate": 0.0
+    },
+    "median_retrieval_ms": 4.8766,
+    "p95_retrieval_ms": 6.30607,
+    "mean_retrieval_ms": 5.068072290502793,
+    "max_ppr_calls": 1,
+    "max_text_embeddings": 3
+  },
+  "G": {
+    "n": 2685,
+    "gold_at_1": {
+      "n": 810,
+      "d": 2685,
+      "rate": 0.3016759776536313
+    },
+    "gold_at_2": {
+      "n": 1022,
+      "d": 2685,
+      "rate": 0.38063314711359403
+    },
+    "gold_at_4": {
+      "n": 1316,
+      "d": 2685,
+      "rate": 0.49013035381750464
+    },
+    "mrr": 0.37352576039726876,
+    "mIoP": 0.3022750055769074,
+    "mIoU": 0.1643849553103932,
+    "IoP@0.5": {
+      "n": 814,
+      "d": 2685,
+      "rate": 0.3031657355679702
+    },
+    "IoU@0.5": {
+      "n": 329,
+      "d": 2685,
+      "rate": 0.12253258845437616
+    },
+    "mean_span_width": 4.283117435009311,
+    "median_span_width": 4.4,
+    "mean_center_error_s": 11.896780242581977,
+    "median_center_error_s": 7.390666666666668,
+    "zero_width_count": 0,
+    "invalid_span_count": 0,
+    "boundary_clipped_count": 0,
+    "mean_top_k_spread_s": 13.993538398137803,
+    "median_top_k_spread_s": 8.7087,
+    "traversal_activation": {
+      "n": 2333,
+      "d": 2685,
+      "rate": 0.8689013035381751
+    },
+    "mean_original_preserved": 2.9385474860335195,
+    "adapter_fallback": {
+      "n": 0,
+      "d": 2685,
+      "rate": 0.0
+    },
+    "median_retrieval_ms": 5.0028,
+    "p95_retrieval_ms": 6.49692,
+    "mean_retrieval_ms": 5.125820335195531,
+    "max_ppr_calls": 1,
+    "max_text_embeddings": 3
+  }
+}

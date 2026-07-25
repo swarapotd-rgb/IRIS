@@ -1,0 +1,27 @@
+=== smoke test: arms A,F,G on 5 deterministic val_tune videos ===
+$ python3 scripts/sparse_temporal_reranker_eval.py --arms A,F,G --limit-videos 5 --out-suffix _smoke
+[frozen] K=4 lambda=0.5 damping=0.5 span=Method-D half_width=2.2s
+[data] 37 val_tune questions, 5 videos
+
+=== Arm A: frozen baseline ===
+  [arm A] done: 37 scored, 0 failures
+  -> /home/ccbd/IRIS-1/.claude/worktrees/sparse-temporal-reranker/tuning/sparse_temporal_reranker_v1/raw/A_baseline_smoke.jsonl
+  {"n": 37, "gold_at_1": 0.324324, "gold_at_2": 0.405405, "gold_at_4": 0.513514, "mrr": 0.394144, "mIoP": 0.268908, "mIoU": 0.163788, "IoP@0.5": 0.297297, "IoU@0.5": 0.135135, "mean_span_width": 4.340541, "median_span_width": 4.4, "zero_width_count": 0, "invalid_span_count": 0, "mean_top_k_spread_s": 26.266781, "median_retrieval_ms": 4.1303, "p95_retrieval_ms": 279.90857, "traversal_activation_rate": 0.0, "mean_original_preserved": 4.0, "adapter_fallback_rate": 0.0, "max_ppr_calls": 1, "max_text_embeddings": 1, "wall_s": 4.83568}
+
+=== Arm F: parser-fixed structured ===
+  [arm F] done: 37 scored, 0 failures
+  -> /home/ccbd/IRIS-1/.claude/worktrees/sparse-temporal-reranker/tuning/sparse_temporal_reranker_v1/raw/F_parser_fixed_smoke.jsonl
+  {"n": 37, "gold_at_1": 0.297297, "gold_at_2": 0.351351, "gold_at_4": 0.486486, "mrr": 0.362613, "mIoP": 0.268908, "mIoU": 0.163788, "IoP@0.5": 0.297297, "IoU@0.5": 0.135135, "mean_span_width": 4.340541, "median_span_width": 4.4, "zero_width_count": 0, "invalid_span_count": 0, "mean_top_k_spread_s": 26.957561, "median_retrieval_ms": 5.3497, "p95_retrieval_ms": 6.47779, "traversal_activation_rate": 0.0, "mean_original_preserved": 4.0, "adapter_fallback_rate": 0.0, "max_ppr_calls": 1, "max_text_embeddings": 3, "wall_s": 0.309349}
+
+=== Arm G: safe non-destructive traversal ===
+  [arm G] done: 37 scored, 0 failures
+  -> /home/ccbd/IRIS-1/.claude/worktrees/sparse-temporal-reranker/tuning/sparse_temporal_reranker_v1/raw/G_safe_traversal_smoke.jsonl
+  {"n": 37, "gold_at_1": 0.27027, "gold_at_2": 0.297297, "gold_at_4": 0.378378, "mrr": 0.308559, "mIoP": 0.346461, "mIoU": 0.217275, "IoP@0.5": 0.324324, "IoU@0.5": 0.189189, "mean_span_width": 4.340541, "median_span_width": 4.4, "zero_width_count": 0, "invalid_span_count": 0, "mean_top_k_spread_s": 21.798353, "median_retrieval_ms": 2.4853, "p95_retrieval_ms": 3.69001, "traversal_activation_rate": 0.864865, "mean_original_preserved": 2.945946, "adapter_fallback_rate": 0.0, "max_ppr_calls": 1, "max_text_embeddings": 3, "wall_s": 0.204608}
+
+DONE
+
+=== unit tests ===
+$ python3 -m pytest tests/test_query_reformulation_v3.py tests/test_temporal_traversal_safe.py -q
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 96%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                      [100%][0m
+[32m[32m[1m75 passed[0m[32m in 0.05s[0m[0m

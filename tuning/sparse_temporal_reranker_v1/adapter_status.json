@@ -1,0 +1,29 @@
+{
+  "component": "lightweight query-conditioned temporal adapter (task section 5) and adaptive span prediction (section 6)",
+  "status": "NOT IMPLEMENTED / NOT TRAINED",
+  "governing_rule": "task rule 9",
+  "finding": "NExT-GQA provides temporal grounding annotations for exactly two splits: val (gsub_val.json, 570 videos -- this is the split partitioned into val_tune and val_confirm) and test (gsub_test.json, 999 videos). There is no train-split grounding annotation file in this repository or in the upstream NExT-GQA release recorded in dataset_manifest.json (source commit 63772e0256ad9e34b83d6a108f1ba2041b924607). The benchmark is deliberately weakly supervised: its train split carries QA pairs and no gold spans.",
+  "why_this_blocks_the_adapter": "Rule 6 permits gold temporal spans as supervised targets only from an official TRAINING split. No such split exists, so no leakage-safe adapter_train/adapter_dev could be constructed. Rules 7 and 8 forbid the only other annotated pool that is in scope (val_tune). Rule 9 prescribes stopping the supervised-adapter implementation and documenting the limitation, which is what was done.",
+  "option_considered_and_not_taken": {
+    "option": "train adapter_train/adapter_dev on the NExT-GQA TEST split",
+    "in_its_favour": "990 videos / 5553 questions with gold spans are already downloaded; dataset_manifest.json records val_test_video_overlap = 0, so it is video-disjoint from val_tune and val_confirm; this repository never evaluates on test (only scripts/part2_dataset_setup.py and benchmarks/prepare_gqa_exp1a.py read it).",
+    "against_it": "the test split is the benchmark's evaluation set. Training on it is not val_tune leakage, but it is a genuine protocol deviation that would permanently forfeit NExT-GQA test-set reporting for any system containing the adapter.",
+    "decision": "NOT TAKEN. This is a research-protocol call with a permanent cost, it is not implied by the task, and rule 6's wording ('official training split') does not cover it. It was escalated rather than taken unilaterally; no authorisation was received, so the conservative branch was followed."
+  },
+  "what_would_unblock_it": [
+    "explicit authorisation to use the NExT-GQA test split as adapter_train/adapter_dev, accepting the forfeit above, or",
+    "any external dataset with (question, video, gold temporal span) triples that is disjoint from NExT-QA val -- e.g. Charades-STA, ActivityNet-Captions, QVHighlights -- ingested through the same IRIS sparse pipeline so cached survivor features match."
+  ],
+  "artifacts_not_produced_because_of_this": [
+    "raw/H_temporal_adapter.jsonl",
+    "raw/I_full_fixed_span.jsonl",
+    "raw/J_full_adaptive_span.jsonl",
+    "adapter_train_videos.json",
+    "adapter_dev_videos.json",
+    "adapter_config.json",
+    "adapter_training_history.json",
+    "checkpoint hash / model-size report"
+  ],
+  "code_state": "iris/retrieval_entry_v3.py and iris/temporal_traversal_safe.py both carry the adapter integration points (adapter.score(...), adapter_scores, adapter_confidence, residual application and fallback) and are covered by tests, so the adapter can be dropped in without touching the retrieval path. No adapter weights exist and no arm using one was run or reported.",
+  "threshold_consequence": "Task sections 3.4/3.5/5.1 require the traversal confidence threshold, the temporal-NMS separation and the candidate-pool size M to be selected on adapter_dev. With no adapter_dev, they were NOT tuned at all: fixed a-priori values were used (margin_activate=0.05, min_separation_s=1.0, min_preserved=3, M=16) and are recorded in traversal_policy.json. They were never selected on val_tune."
+}

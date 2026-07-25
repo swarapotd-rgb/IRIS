@@ -1,0 +1,14 @@
+date_utc: 2026-07-25T16:58:33Z
+branch: wt/sparse-temporal-reranker-v1  (worktree of feat/sparse-temporal-reranker-v1)
+commit: 0f5bd3520239f12a9ea7fbe1bd9ab6acd015e28c
+base_commit: 18f6339 (feat: Structured Query Reformulation V2 val_tune ablation)
+python: Python 3.13.12
+platform: Linux 6.8.0-134-generic x86_64
+cpu: 32 cores
+gpu: NVIDIA GeForce RTX 4090
+ram_gb: 125
+torch: 2.11.0+cu130
+numpy: 2.4.4
+scipy: 1.17.1
+networkx: 3.6.1
+retrieval_execution_mode: CPU for PPR/traversal; CLIP text embedding on GPU (identical for every arm)
