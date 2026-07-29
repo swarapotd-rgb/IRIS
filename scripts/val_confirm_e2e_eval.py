@@ -226,6 +226,11 @@ def make_e2e_config(frozen: dict, args: argparse.Namespace | None = None) -> IRI
         cfg.max_retrieval_queries = (
             min(args.max_queries, 3) if args.query_mode == "structured_v2" else args.max_queries
         )
+        # Answer-stage context repairs (#2, #3). These are read only by
+        # L1ElysiumCache.as_context_text and change nothing about retrieval,
+        # span construction, or captioning.
+        cfg.context_temporal_scaffold = bool(getattr(args, "context_scaffold", False))
+        cfg.context_codec_verbal = bool(getattr(args, "context_verbal", False))
     return cfg
 
 
@@ -595,6 +600,48 @@ def build_arg_parser() -> argparse.ArgumentParser:
              "identical. Default val_confirm reproduces the historical run.",
     )
     p.add_argument(
+        "--arm-tag", dest="arm_tag", default=None,
+        help="Redirect this run's per-question CSV / report / environment / "
+             "metrics to <out-dir>/arm_<TAG>_* instead of the split's canonical "
+             "filenames. REQUIRED for any ablation arm: without it a run with "
+             "the default modes would write straight over "
+             "tuning/val_confirm_e2e_per_question.csv, which is a recorded "
+             "protected artifact.",
+    )
+    p.add_argument(
+        "--out-dir", dest="out_dir", default=None,
+        help="Directory for this run's outputs (default: the split's canonical "
+             "dir). Used with --arm-tag to keep an experiment's arms together.",
+    )
+    p.add_argument(
+        "--context-scaffold", dest="context_scaffold", action="store_true",
+        help="Repair #2: show each frame's ordinal position among the shown "
+             "frames and the gap to the previous shown frame. Answer-stage "
+             "only -- retrieval, spans and captions are untouched.",
+    )
+    p.add_argument(
+        "--context-verbal", dest="context_verbal", action="store_true",
+        help="Repair #3: render action_score/persistence as natural language "
+             "instead of bare floats, using the frozen val_tune tertiles in "
+             "iris/codec_verbal_thresholds.json. Answer-stage only. Omitting "
+             "the flag keeps the numeric form, so the change is reversible.",
+    )
+    p.add_argument(
+        "--question-aware-captions", dest="question_aware_captions", action="store_true",
+        help="Phase 3 (#1): pass question= and choices= into _ensure_captions so "
+             "the captioner sees the question (_build_focus_hint). Implies "
+             "per-question captioning: the per-index caption cache is bypassed, "
+             "since a caption generated for one question is not valid for "
+             "another under this mode.",
+    )
+    p.add_argument(
+        "--caption-question-map", dest="caption_question_map", default=None,
+        help="Phase 3 Arm G: JSON {video: {qid: donor_qid}}. Captions for `qid` "
+             "are generated using donor_qid's question/choices, then the "
+             "ORIGINAL question is answered. This is the shuffled control that "
+             "separates visual grounding from question leakage.",
+    )
+    p.add_argument(
         "--resume", dest="resume", action="store_true",
         help="Skip any question already present in the output CSV and any video "
              "already ingested in the split's index cache. Without this flag an "
@@ -621,12 +668,21 @@ def main(argv: list[str] | None = None) -> None:
     split = args.split
     spec = SPLIT_SPECS[split]
     index_cache_dir = index_cache_dir_for(split)
-    out_dir = out_dir_for(split)
+    out_dir = Path(args.out_dir) if args.out_dir else out_dir_for(split)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    per_question_csv, _report_path = output_paths_for_mode(
-        args.query_mode, args.temporal_traversal_mode, split
-    )
+    if args.arm_tag:
+        # An arm NEVER writes to the split's canonical filenames. Those are
+        # recorded protected artifacts; a mis-flagged rerun overwriting the
+        # frozen val_confirm baseline CSV would be unrecoverable.
+        stem_prefix = f"arm_{args.arm_tag}"
+        per_question_csv = out_dir / f"{stem_prefix}_per_question.csv"
+        _report_path = out_dir / f"{stem_prefix}_report.md"
+    else:
+        stem_prefix = None
+        per_question_csv, _report_path = output_paths_for_mode(
+            args.query_mode, args.temporal_traversal_mode, split
+        )
     if per_question_csv.exists() and not args.resume:
         raise SystemExit(
             f"[setup] {per_question_csv} already exists -- refusing to overwrite a "
@@ -703,7 +759,8 @@ def main(argv: list[str] | None = None) -> None:
         "" if (args.query_mode == "none" and args.temporal_traversal_mode == "none")
         else f"_{args.query_mode}_{args.temporal_traversal_mode}"
     )
-    env_path = out_dir / f"{spec['stem']}_environment{env_suffix}.json"
+    env_path = (out_dir / f"{stem_prefix}_environment.json" if stem_prefix
+                else out_dir / f"{spec['stem']}_environment{env_suffix}.json")
 
     half_width_s = float(frozen["span_method_half_width_s"])
     assert frozen["span_method"] == "D", f"expected span_method=D, got {frozen['span_method']!r}"
@@ -769,6 +826,59 @@ def main(argv: list[str] | None = None) -> None:
     caption_load_dump = load_caption_dump(args.caption_load) if args.caption_load else None
     caption_dump_accumulator: dict = {} if args.caption_dump else None
 
+    if args.caption_question_map and not args.question_aware_captions:
+        raise SystemExit(
+            "[setup] --caption-question-map only has meaning with "
+            "--question-aware-captions: it substitutes which question the "
+            "CAPTIONER sees, and the question-blind captioner sees none."
+        )
+    caption_question_map = (
+        json.loads(Path(args.caption_question_map).read_text())
+        if args.caption_question_map else None
+    )
+    # Donor lookup for Arm G, built from the same `questions` list being
+    # evaluated so a donor qid can never point at a question outside the run.
+    donor_by_video: dict[str, dict[str, dict]] = {}
+    if caption_question_map is not None:
+        for qq in questions:
+            donor_by_video.setdefault(qq["video"], {})[str(qq["qid"])] = qq
+        # A video with only one question has no other question to borrow from,
+        # so it cannot be deranged. Those questions are SKIPPED, never
+        # self-mapped: a self-map is silently arm E and would contaminate the
+        # control. The paired bootstrap keys on (video, qid), so the skipped
+        # rows drop out of both sides of the E-vs-G comparison rather than
+        # being compared against nothing.
+        unmappable = {
+            (qq["video"], str(qq["qid"])) for qq in questions
+            if str(qq["qid"]) not in (caption_question_map.get(qq["video"]) or {})
+        }
+        if unmappable:
+            print(f"[setup] Arm-G: {len(unmappable)} question(s) in single-question "
+                  f"videos cannot be deranged and will be SKIPPED (not self-mapped): "
+                  f"{sorted(unmappable)}", flush=True)
+        n_self = sum(
+            1 for qq in questions
+            if (qq["video"], str(qq["qid"])) not in unmappable
+            and str(caption_question_map[qq["video"]][str(qq["qid"])]) == str(qq["qid"])
+        )
+        if n_self:
+            raise SystemExit(
+                f"[setup] --caption-question-map maps {n_self} qid(s) to themselves. "
+                "Arm G must be a derangement -- a self-map is silently Arm E and "
+                "would contaminate the control."
+            )
+        print(f"[setup] Arm-G shuffle map verified: "
+              f"{len(questions) - len(unmappable)} of {len(questions)} questions "
+              f"mapped, 0 self-maps (proper derangement within each video)", flush=True)
+    else:
+        unmappable = set()
+
+    # Captioner cost accounting (#3 of Phase 3's 'also required'). Counts how
+    # many retrieved frames ALREADY had a caption when the question reached the
+    # captioner -- i.e. the reuse the question-blind path enjoys and the
+    # question-aware path must forfeit.
+    caption_cache_stats = {"n_frames": 0, "n_would_have_hit": 0}
+
     index_cache: dict = {}
     retrieval_ms_list = []
     n_answer_nonempty_sample = 0
@@ -831,6 +941,10 @@ def main(argv: list[str] | None = None) -> None:
         if (vid, q["qid"]) in completed:
             n_resume_skipped += 1
             continue
+        if (vid, str(q["qid"])) in unmappable:
+            # Arm G only: single-question video, no donor available. Skipped
+            # rather than self-mapped -- see the setup block above.
+            continue
         if vid not in index_paths:
             continue
         if vid not in index_cache:
@@ -860,13 +974,55 @@ def main(argv: list[str] | None = None) -> None:
         retrieval_ms_list.append(t_retrieval_span)
 
         t1 = time.perf_counter()
+        # Measured for EVERY caption mode, before any of them mutates the
+        # cache, so the question-blind reuse rate and the question-aware one
+        # are the same quantity computed the same way.
+        _fm = {fr.frame_idx: fr for fr in index.frames}
+        n_cached_before = sum(
+            1 for f in retrieved_frames
+            if _fm.get(f["frame_idx"]) is not None and _fm[f["frame_idx"]].caption is not None
+        )
         if caption_load_dump is not None:
             apply_caption_load(index, retrieved_frames, vid, q["qid"], caption_load_dump)
+        elif args.question_aware_captions:
+            # Question-aware captioning (#1). Two things change versus the
+            # question-blind path:
+            #
+            # 1. question=/choices= are actually passed, so _build_focus_hint
+            #    produces a hint instead of returning None. This is the bug the
+            #    headline run had: _build_focus_hint has existed and been wired
+            #    in iris/query.py all along, but this harness called
+            #    _ensure_captions positionally with neither argument.
+            # 2. The per-index caption cache is BYPASSED. _ensure_captions
+            #    caches on FrameRecord.caption keyed by frame_idx, which is
+            #    correct when captions are question-blind and fatal when they
+            #    are not -- question 2 would silently inherit question 1's
+            #    caption and the arm would measure nothing. Clearing the cache
+            #    for this question's retrieved frames forces a real caption
+            #    per (question, frame), which is also exactly the cost the
+            #    task asks to be measured.
+            for f in retrieved_frames:
+                fr = _fm.get(f["frame_idx"])
+                if fr is not None:
+                    fr.caption = None
+                f["caption"] = None
+            # Arm G: caption using a DIFFERENT question from the same video,
+            # then answer the original. Everything downstream is unchanged.
+            cap_q, cap_choices = q["question"], q["choices"]
+            if caption_question_map is not None:
+                donor_qid = caption_question_map[vid][str(q["qid"])]
+                donor = donor_by_video[vid][str(donor_qid)]
+                cap_q, cap_choices = donor["question"], donor["choices"]
+            iris_query._ensure_captions(
+                index, retrieved_frames, cfg, question=cap_q, choices=cap_choices,
+            )
         else:
             try:
                 iris_query._ensure_captions(index, retrieved_frames, cfg)
             except TypeError:
                 iris_query._ensure_captions(index, retrieved_frames)
+        caption_cache_stats["n_frames"] += len(retrieved_frames)
+        caption_cache_stats["n_would_have_hit"] += n_cached_before
         if caption_dump_accumulator is not None:
             record_caption_dump(retrieved_frames, vid, q["qid"], caption_dump_accumulator)
         cache_obj = iris_query.wrapper_init_l1_cache(cfg)
@@ -998,6 +1154,23 @@ def main(argv: list[str] | None = None) -> None:
         "p95_caption_answer_ms": (statistics.quantiles(caption_answer_ms_list, n=20)[18] if len(caption_answer_ms_list) >= 20 else max(caption_answer_ms_list, default=0.0)),
         "total_wall_s": total_wall_s,
         "minicpm_truncation_stats": aria.get_minicpm_truncation_stats(),
+        "arm_tag": args.arm_tag,
+        "context_temporal_scaffold": cfg.context_temporal_scaffold,
+        "context_codec_verbal": cfg.context_codec_verbal,
+        "question_aware_captions": bool(args.question_aware_captions),
+        "caption_question_map": args.caption_question_map,
+        "caption_reuse": {
+            "n_retrieved_frames": caption_cache_stats["n_frames"],
+            "n_already_captioned_on_arrival": caption_cache_stats["n_would_have_hit"],
+            "reuse_rate": (caption_cache_stats["n_would_have_hit"] / caption_cache_stats["n_frames"]
+                           if caption_cache_stats["n_frames"] else None),
+            "note": "Fraction of retrieved frames that already carried a caption when "
+                    "the question reached the captioner. Under --question-aware-captions "
+                    "this reuse is deliberately forfeited (the cache is cleared per "
+                    "question), so the rate reported here is what the question-blind "
+                    "path WOULD have reused.",
+        },
+        "total_caption_ms": sum(r["caption_ms"] for r in records),
     }
 
     if n_repeats == 1:
@@ -1046,7 +1219,8 @@ def main(argv: list[str] | None = None) -> None:
         print(f"[repeat] wrote variance summary to {summary_path}", flush=True)
         metrics["repeat_summary"] = repeat_summary
 
-    metrics_path = out_dir / f"{spec['stem']}_metrics.json"
+    metrics_path = (out_dir / f"{stem_prefix}_metrics.json" if stem_prefix
+                    else out_dir / f"{spec['stem']}_metrics.json")
     metrics_path.write_text(json.dumps(metrics, indent=2))
 
     # Historical stdout contract preserved verbatim for val_confirm so any

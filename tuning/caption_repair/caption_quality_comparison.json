@@ -1,0 +1,95 @@
+{
+  "lexicon": {
+    "n_temporal_words": 60,
+    "n_action_verb_forms": 478
+  },
+  "historically_stated_baseline": {
+    "pct_with_temporal_word": 3.0,
+    "pct_with_action_verb": 52.9,
+    "pct_questions_zero_action_verb": 15.6,
+    "mean_within_question_jaccard": 0.343,
+    "median_caption_length_words": 42
+  },
+  "dumps": {
+    "baseline_question_blind": {
+      "path": "/home/ccbd/IRIS-1/tuning/blind_ablation/captions_dump.json",
+      "n_captions": 2556,
+      "n_questions": 639,
+      "pct_with_temporal_word": 3.5211267605633805,
+      "pct_with_action_verb": 45.18779342723005,
+      "pct_questions_zero_action_verb": 21.12676056338028,
+      "mean_within_question_jaccard": 0.35399072545401267,
+      "median_within_question_jaccard": 0.34291832403865097,
+      "median_caption_length_words": 42.0,
+      "mean_caption_length_words": 42.258607198748045,
+      "question_leakage": {
+        "n_captions": 2556,
+        "mean_question_content_word_recall": 0.14804395960499248,
+        "median_question_content_word_recall": 0.14285714285714285,
+        "pct_captions_recalling_half_the_question": 4.929577464788732
+      }
+    },
+    "qaware": {
+      "path": "tuning/caption_repair/captions_dump_qaware.json",
+      "n_captions": 2556,
+      "n_questions": 639,
+      "pct_with_temporal_word": 49.960876369327075,
+      "pct_with_action_verb": 85.21126760563381,
+      "pct_questions_zero_action_verb": 3.2863849765258215,
+      "mean_within_question_jaccard": 0.3625098216994825,
+      "median_within_question_jaccard": 0.3539961019483008,
+      "median_caption_length_words": 55.0,
+      "mean_caption_length_words": 56.73356807511737,
+      "delta_vs_baseline": {
+        "pct_with_temporal_word": 46.43974960876369,
+        "pct_with_action_verb": 40.02347417840376,
+        "pct_questions_zero_action_verb": -17.84037558685446,
+        "mean_within_question_jaccard": 0.008519096245469815,
+        "median_within_question_jaccard": 0.01107777790964981,
+        "median_caption_length_words": 13.0,
+        "mean_caption_length_words": 14.474960876369323
+      },
+      "question_leakage": {
+        "n_captions": 2556,
+        "mean_question_content_word_recall": 0.7038925330885425,
+        "median_question_content_word_recall": 0.7142857142857143,
+        "pct_captions_recalling_half_the_question": 84.4679186228482
+      }
+    },
+    "shuffled": {
+      "path": "tuning/caption_repair/captions_dump_shuffled.json",
+      "n_captions": 2536,
+      "n_questions": 634,
+      "pct_with_temporal_word": 49.56624605678233,
+      "pct_with_action_verb": 84.89747634069401,
+      "pct_questions_zero_action_verb": 3.7854889589905363,
+      "mean_within_question_jaccard": 0.36217658547476383,
+      "median_within_question_jaccard": 0.3568185126036619,
+      "median_caption_length_words": 55.0,
+      "mean_caption_length_words": 56.33004731861199,
+      "delta_vs_baseline": {
+        "pct_with_temporal_word": 46.04511929621895,
+        "pct_with_action_verb": 39.709682913463965,
+        "pct_questions_zero_action_verb": -17.341271604389743,
+        "mean_within_question_jaccard": 0.008185860020751168,
+        "median_within_question_jaccard": 0.013900188565010907,
+        "median_caption_length_words": 13.0,
+        "mean_caption_length_words": 14.071440119863944
+      },
+      "question_leakage": {
+        "n_captions": 2536,
+        "mean_question_content_word_recall": 0.3247397504791038,
+        "median_question_content_word_recall": 0.3333333333333333,
+        "pct_captions_recalling_half_the_question": 26.025236593059937
+      },
+      "question_leakage_vs_donor": {
+        "n_captions": 2536,
+        "n_questions_without_resolvable_donor": 0,
+        "mean_recall_of_ASKED_question": 0.3247397504791038,
+        "mean_recall_of_DONOR_question": 0.6990252769925482,
+        "donor_minus_asked": 0.37428552651344443,
+        "diagnostic_detects_injection": true
+      }
+    }
+  }
+}

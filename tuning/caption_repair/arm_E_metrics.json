@@ -1,0 +1,42 @@
+{
+  "split": "val_confirm",
+  "n_scored": 639,
+  "n_repeats": 1,
+  "n_nominal_videos": 113,
+  "n_usable_videos": 112,
+  "n_resume_skipped": 0,
+  "n_fresh_ingests": 0,
+  "n_cache_hits": 112,
+  "mIoP": 0.3062940379992725,
+  "mIoU": 0.16089098829443868,
+  "IoP@0.3": 0.39123630672926446,
+  "IoP@0.5": 0.3145539906103286,
+  "IoU@0.3": 0.24413145539906103,
+  "IoU@0.5": 0.1189358372456964,
+  "median_retrieval_span_ms": 7.558188999610138,
+  "p95_retrieval_span_ms": 8.68156300020928,
+  "median_caption_answer_ms": 2632.83,
+  "p95_caption_answer_ms": 3276.52,
+  "total_wall_s": 1739.662883713001,
+  "minicpm_truncation_stats": {
+    "total_calls": 2556,
+    "truncated_first_attempt": 0,
+    "truncated_after_retry": 0,
+    "truncation_rate_after_retry": 0.0,
+    "first_attempt_truncation_rate": 0.0
+  },
+  "arm_tag": "E",
+  "context_temporal_scaffold": false,
+  "context_codec_verbal": false,
+  "question_aware_captions": true,
+  "caption_question_map": null,
+  "caption_reuse": {
+    "n_retrieved_frames": 2556,
+    "n_already_captioned_on_arrival": 891,
+    "reuse_rate": 0.3485915492957746,
+    "note": "Fraction of retrieved frames that already carried a caption when the question reached the captioner. Under --question-aware-captions this reuse is deliberately forfeited (the cache is cleared per question), so the rate reported here is what the question-blind path WOULD have reused."
+  },
+  "total_caption_ms": 1592848.9948440182,
+  "Acc@QA": 0.5633802816901409,
+  "Acc@GQA_unverified": 0.19718309859154928
+}

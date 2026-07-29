@@ -1,0 +1,14 @@
+{
+  "n_videos": 20,
+  "n_questions": 117,
+  "question_aware": true,
+  "n_captions_compared": 468,
+  "n_identical": 468,
+  "n_differing": 0,
+  "identical_rate": 1.0,
+  "deterministic": true,
+  "pass1_wall_s": 394.5901262649986,
+  "pass2_wall_s": 332.6059343750003,
+  "differing_examples": [],
+  "interpretation": "Caption stage is byte-for-byte deterministic across two passes; Phase-3 accuracy deltas carry no caption-variance term."
+}

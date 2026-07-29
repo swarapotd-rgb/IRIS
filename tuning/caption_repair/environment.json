@@ -1,0 +1,97 @@
+{
+  "git_head": "6136eea79330af24d73fa5c40913f487e0543b1e",
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+  "phases": [
+    "Phase 2 (context repairs, frozen captions)",
+    "Phase 3 (question-aware captions)"
+  ],
+  "split": "val_confirm (639 questions / 112 videos)",
+  "retrieval": {
+    "note": "Held FIXED in every arm. No retrieval parameter was modified in any phase.",
+    "frozen_state": {
+      "retrieval_strategy": "hybrid",
+      "ppr_lambda": 0.5,
+      "ppr_damping": 0.5,
+      "l2_retrieve_top_k": 4,
+      "span_method": "D",
+      "span_method_half_width_s": 2.2,
+      "peak_distance": 5,
+      "peak_prominence": 0.05,
+      "packet_size_weight": 0.8,
+      "motion_weight": 0.1,
+      "luma_entropy_weight": 0.1,
+      "persistence_threshold": 0.4,
+      "max_prominence": 0.5
+    },
+    "ingest_config_hash": "4edae64ed40256e3",
+    "index_cache_dir": "tuning/index_cache_val_confirm_e2e",
+    "fresh_ingests": 0
+  },
+  "answerer_serving_contract": {
+    "binary": "/home/ccbd/.local/iris/bin/llama-server-b10099",
+    "binary_sha256": "250d2eb35a6ddfa1df060599f8bc3169944ef60a77429b2cc395e062859e0a06",
+    "launcher": "/home/ccbd/.local/iris/bin/serve-granite-pinned.sh",
+    "ld_library_path": "/home/ccbd/.local/iris/bin (per tuning/prerun_fixes/pinned_binary.json)",
+    "endpoint": "http://127.0.0.1:8091/v1",
+    "alias": "granite4:micro",
+    "parallel": 1,
+    "continuous_batching": false,
+    "sampler": {
+      "temperature": 0,
+      "top_k": 1,
+      "top_p": 1.0,
+      "seed": 42,
+      "cache_prompt": false
+    },
+    "never_ollama": "The answerer is never served by Ollama's bundled runner. assert_models_endpoint() hard-refuses port 11434."
+  },
+  "captioner": {
+    "backend": "minicpm",
+    "model": "minicpm-v4.6",
+    "endpoint": "http://localhost:11434 (Ollama -- the production CAPTIONER path; distinct from the answerer, which is never served by Ollama)",
+    "sampler": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 400,
+      "retry_num_predict": 700
+    }
+  },
+  "codec_verbal_thresholds": {
+    "derived_from": "val_tune survivor frames (index.frames action_score)",
+    "split": "val_tune",
+    "ingest_config_hash": "4edae64ed40256e3",
+    "n_videos": 450,
+    "n_frames": 71917,
+    "percentiles": {
+      "p33_3": 0.4402723014354706,
+      "p66_7": 0.6614616513252259
+    },
+    "thresholds": {
+      "static_below": 0.4402723014354706,
+      "high_at_or_above": 0.6614616513252259
+    },
+    "labels": {
+      "low": "static",
+      "mid": "moderate activity",
+      "high": "high activity"
+    },
+    "distribution": {
+      "min": 0.0,
+      "p10": 0.3233788788318634,
+      "p25": 0.4011097550392151,
+      "median": 0.5267083048820496,
+      "p75": 0.7733686566352844,
+      "p90": 0.8984791040420532,
+      "max": 1.0,
+      "mean": 0.5742441370706234,
+      "std": 0.21288337292941914
+    },
+    "note": "Derived once from val_tune and frozen. Not tuned; no result-bearing split informed these cut points."
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20260729,
+    "clustering": "by video (112 clusters)"
+  },
+  "shuffle_map_seed": 20260729
+}

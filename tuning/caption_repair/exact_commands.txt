@@ -1,0 +1,83 @@
+# =====================================================================
+# PHASE 2 -- context-side repairs (#2 temporal scaffolding, #3 verbal
+# codec state), over the FROZEN caption dump. No captioning in any arm.
+# =====================================================================
+
+# Protected-artifact snapshot before any work:
+python scripts/protected_hashes.py tuning/caption_repair/protected_hashes_before.txt
+
+# Derive the #3 thresholds ONCE from val_tune and record them. Not tuned;
+# not re-derivable from any result-bearing split.
+python scripts/derive_action_score_tertiles.py
+#   -> iris/codec_verbal_thresholds.json  (p33.3 / p66.7 over 71,917
+#      val_tune survivor frames from 450 videos)
+
+# Answerer served by the PINNED b10099 binary (never Ollama's runner):
+#   /home/ccbd/.local/iris/bin/serve-granite-pinned.sh
+#   (pins llama-server-b10099 sha256 250d2eb3..., LD_LIBRARY_PATH per
+#    tuning/prerun_fixes/pinned_binary.json, --parallel 1, no continuous
+#    batching, alias granite4:micro on 127.0.0.1:8091)
+# Sampler per request: temperature=0, top_k=1, top_p=1.0, seed=42,
+# cache_prompt=false.
+
+COMMON="--split val_confirm --resume \
+  --caption-load tuning/blind_ablation/captions_dump.json \
+  --out-dir tuning/caption_repair"
+
+# Arm A -- baseline. MUST reproduce Acc@QA = 345/639 exactly.
+python scripts/val_confirm_e2e_eval.py $COMMON --arm-tag A
+# Arm B -- #3 only
+python scripts/val_confirm_e2e_eval.py $COMMON --arm-tag B --context-verbal
+# Arm C -- #2 only
+python scripts/val_confirm_e2e_eval.py $COMMON --arm-tag C --context-scaffold
+# Arm D -- #2 + #3
+python scripts/val_confirm_e2e_eval.py $COMMON --arm-tag D --context-scaffold --context-verbal
+
+# =====================================================================
+# PHASE 3 -- question-aware captions (#1) + the mandatory shuffled control
+# =====================================================================
+
+# Captioner: MiniCPM-v4.6 via Ollama on 11434 (the production captioner;
+# the ANSWERER is never served by Ollama -- see the serving contract above).
+
+# Arm G's seeded within-video derangement. Asserts no qid maps to itself.
+python scripts/build_caption_shuffle_map.py --split val_confirm --seed 20260729
+
+# Caption-stage determinism: 20 videos captioned twice, diffed byte-for-byte.
+python scripts/caption_determinism_check.py --n-videos 20
+
+# Arm E -- question-aware captions, BASELINE context. Dumps the captions so
+# arm F can reuse the identical caption set (F must differ from E only in
+# context, so re-captioning for F would confound the comparison).
+python scripts/val_confirm_e2e_eval.py --split val_confirm --resume \
+  --out-dir tuning/caption_repair --arm-tag E \
+  --question-aware-captions \
+  --caption-dump tuning/caption_repair/captions_dump_qaware.json
+
+# Arm F -- same question-aware captions, best Phase-2 context.
+python scripts/val_confirm_e2e_eval.py --split val_confirm --resume \
+  --out-dir tuning/caption_repair --arm-tag F \
+  --caption-load tuning/caption_repair/captions_dump_qaware.json \
+  <best-phase-2-context-flags>
+
+# Arm G -- SHUFFLED question-aware captions, baseline context. Captions are
+# generated from a DIFFERENT question in the same video; the ORIGINAL
+# question is then answered. Separates visual grounding from question leakage.
+python scripts/val_confirm_e2e_eval.py --split val_confirm --resume \
+  --out-dir tuning/caption_repair --arm-tag G \
+  --question-aware-captions \
+  --caption-question-map tuning/caption_repair/shuffle_map.json \
+  --caption-dump tuning/caption_repair/captions_dump_shuffled.json
+
+# =====================================================================
+# Analysis (derived from the per-question CSVs the arms already flushed;
+# nothing is re-run and no number is stitched across invocations)
+# =====================================================================
+python scripts/caption_repair_analysis.py --arms A B C D E F G
+python scripts/caption_quality_metrics.py \
+  --new qaware=tuning/caption_repair/captions_dump_qaware.json \
+        shuffled=tuning/caption_repair/captions_dump_shuffled.json
+
+python scripts/protected_hashes.py tuning/caption_repair/protected_hashes_after.txt
+diff tuning/caption_repair/protected_hashes_before.txt \
+     tuning/caption_repair/protected_hashes_after.txt

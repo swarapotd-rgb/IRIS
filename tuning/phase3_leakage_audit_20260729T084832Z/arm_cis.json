@@ -1,0 +1,494 @@
+{
+  "arms_present": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+  ],
+  "arms_missing": [],
+  "baseline_arm": "A",
+  "row_counts": {
+    "A": 639,
+    "B": 639,
+    "C": 639,
+    "D": 639,
+    "E": 639,
+    "F": 639,
+    "G": 634
+  },
+  "per_arm_absolute": {
+    "A": {
+      "Acc@QA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.539906103286385,
+        "ci95": [
+          0.49544072948328266,
+          0.5840130505709625
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.18622848200312989,
+        "ci95": [
+          0.14831804281345565,
+          0.22503725782414308
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "B": {
+      "Acc@QA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.5305164319248826,
+        "ci95": [
+          0.48822605965463106,
+          0.5741935483870968
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.18622848200312989,
+        "ci95": [
+          0.14956521739130435,
+          0.2248427672955975
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "C": {
+      "Acc@QA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.543035993740219,
+        "ci95": [
+          0.496742671009772,
+          0.5878787878787879
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.18622848200312989,
+        "ci95": [
+          0.1485623003194888,
+          0.22442244224422442
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "D": {
+      "Acc@QA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.5414710485133021,
+        "ci95": [
+          0.4976303317535545,
+          0.5852090032154341
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.18779342723004694,
+        "ci95": [
+          0.14968152866242038,
+          0.2254601226993865
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "E": {
+      "Acc@QA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.5633802816901409,
+        "ci95": [
+          0.5249221183800623,
+          0.6040061633281972
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.19718309859154928,
+        "ci95": [
+          0.16095890410958905,
+          0.2366412213740458
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "F": {
+      "Acc@QA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.5477308294209703,
+        "ci95": [
+          0.507537688442211,
+          0.5900900900900901
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n": 639,
+        "n_clusters": 112,
+        "point": 0.19405320813771518,
+        "ci95": [
+          0.15780998389694043,
+          0.23303834808259588
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "G": {
+      "Acc@QA": {
+        "n": 634,
+        "n_clusters": 107,
+        "point": 0.5914826498422713,
+        "ci95": [
+          0.5499207606973059,
+          0.6307448494453248
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n": 634,
+        "n_clusters": 107,
+        "point": 0.1971608832807571,
+        "ci95": [
+          0.16108452950558214,
+          0.2357473035439137
+        ],
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    }
+  },
+  "delta_vs_baseline": {
+    "B_vs_A": {
+      "Acc@QA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": -0.009389671361502348,
+        "ci95": [
+          -0.02848575712143928,
+          0.009104704097116844
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 16,
+        "n_discordant_A_better": 22,
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.0,
+        "ci95": [
+          -0.004651162790697674,
+          0.004658385093167702
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 1,
+        "n_discordant_A_better": 1,
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "C_vs_A": {
+      "Acc@QA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.003129890453834116,
+        "ci95": [
+          -0.016666666666666666,
+          0.024232633279483037
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 22,
+        "n_discordant_A_better": 20,
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.0,
+        "ci95": [
+          -0.01037037037037037,
+          0.010638297872340425
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 6,
+        "n_discordant_A_better": 6,
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "D_vs_A": {
+      "Acc@QA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.001564945226917058,
+        "ci95": [
+          -0.019230769230769232,
+          0.02262443438914027
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 24,
+        "n_discordant_A_better": 23,
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.001564945226917058,
+        "ci95": [
+          -0.00667779632721202,
+          0.012012012012012012
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 4,
+        "n_discordant_A_better": 3,
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "E_vs_A": {
+      "Acc@QA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.023474178403755867,
+        "ci95": [
+          -0.017377567140600316,
+          0.06514657980456026
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 101,
+        "n_discordant_A_better": 86,
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.010954616588419406,
+        "ci95": [
+          -0.008902077151335312,
+          0.03139013452914798
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 30,
+        "n_discordant_A_better": 23,
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "F_vs_A": {
+      "Acc@QA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.00782472613458529,
+        "ci95": [
+          -0.03241491085899514,
+          0.0492845786963434
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 98,
+        "n_discordant_A_better": 93,
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n_paired": 639,
+        "n_clusters": 112,
+        "n_only_in_A": 0,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [],
+        "delta": 0.00782472613458529,
+        "ci95": [
+          -0.012326656394453005,
+          0.02786377708978328
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 29,
+        "n_discordant_A_better": 24,
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    },
+    "G_vs_A": {
+      "Acc@QA": {
+        "n_paired": 634,
+        "n_clusters": 107,
+        "n_only_in_A": 5,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [
+          [
+            "13515224395",
+            "0"
+          ],
+          [
+            "2857132732",
+            "7"
+          ],
+          [
+            "3175315183",
+            "3"
+          ],
+          [
+            "4740074365",
+            "8"
+          ],
+          [
+            "5048503508",
+            "5"
+          ]
+        ],
+        "delta": 0.052050473186119876,
+        "ci95": [
+          0.01335559265442404,
+          0.08992248062015504
+        ],
+        "excludes_zero": true,
+        "n_discordant_B_better": 91,
+        "n_discordant_A_better": 58,
+        "resamples": 2000,
+        "seed": 20260729
+      },
+      "Acc@GQA": {
+        "n_paired": 634,
+        "n_clusters": 107,
+        "n_only_in_A": 5,
+        "n_only_in_B": 0,
+        "dropped_keys_only_in_A": [
+          [
+            "13515224395",
+            "0"
+          ],
+          [
+            "2857132732",
+            "7"
+          ],
+          [
+            "3175315183",
+            "3"
+          ],
+          [
+            "4740074365",
+            "8"
+          ],
+          [
+            "5048503508",
+            "5"
+          ]
+        ],
+        "delta": 0.011041009463722398,
+        "ci95": [
+          -0.0065252854812398045,
+          0.02857142857142857
+        ],
+        "excludes_zero": false,
+        "n_discordant_B_better": 21,
+        "n_discordant_A_better": 14,
+        "resamples": 2000,
+        "seed": 20260729
+      }
+    }
+  },
+  "paired_E_vs_G": {
+    "Acc@QA": {
+      "n_paired": 634,
+      "n_clusters": 107,
+      "n_only_in_A": 0,
+      "n_only_in_B": 5,
+      "dropped_keys_only_in_A": [],
+      "delta": -0.02996845425867508,
+      "ci95": [
+        -0.07009345794392523,
+        0.010526315789473684
+      ],
+      "excludes_zero": false,
+      "n_discordant_B_better": 91,
+      "n_discordant_A_better": 110,
+      "resamples": 2000,
+      "seed": 20260729
+    },
+    "Acc@GQA": {
+      "n_paired": 634,
+      "n_clusters": 107,
+      "n_only_in_A": 0,
+      "n_only_in_B": 5,
+      "dropped_keys_only_in_A": [],
+      "delta": 0.0,
+      "ci95": [
+        -0.021103896103896104,
+        0.0219435736677116
+      ],
+      "excludes_zero": false,
+      "n_discordant_B_better": 27,
+      "n_discordant_A_better": 27,
+      "resamples": 2000,
+      "seed": 20260729
+    },
+    "note": "delta = E - G. Positive means question-aware captioning beats its own deranged control, i.e. the gain is not pure leakage."
+  },
+  "E_restricted_to_G_rows": {
+    "n": 634,
+    "Acc@QA": 0.5615141955835962,
+    "Acc@GQA": 0.1971608832807571
+  }
+}
