@@ -1,0 +1,32 @@
+{
+  "git_head": "3a6930c5b8228adca2ae2bf4561e9de8c248e3c9",
+  "frozen": {
+    "retrieval_strategy": "hybrid",
+    "ppr_lambda": 0.5,
+    "ppr_damping": 0.5,
+    "l2_retrieve_top_k": 4,
+    "span_method": "D",
+    "span_method_half_width_s": 2.2,
+    "peak_distance": 5,
+    "peak_prominence": 0.05,
+    "packet_size_weight": 0.8,
+    "motion_weight": 0.1,
+    "luma_entropy_weight": 0.1,
+    "persistence_threshold": 0.4,
+    "max_prominence": 0.5
+  },
+  "ingest_config_hash": "4edae64ed40256e3",
+  "c1_offsets_s": [
+    1.0,
+    2.0,
+    3.0,
+    5.0
+  ],
+  "c2_draws": 20,
+  "c2_seed": 20260729,
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+  "splits": [
+    "val_tune",
+    "val_confirm"
+  ]
+}

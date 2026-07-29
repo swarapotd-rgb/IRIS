@@ -1,0 +1,21 @@
+[2026-07-29T07:20:27Z] [setup] frozen={'retrieval_strategy': 'hybrid', 'ppr_lambda': 0.5, 'ppr_damping': 0.5, 'l2_retrieve_top_k': 4, 'span_method': 'D', 'span_method_half_width_s': 2.2, 'peak_distance': 5, 'peak_prominence': 0.05, 'packet_size_weight': 0.8, 'motion_weight': 0.1, 'luma_entropy_weight': 0.1, 'persistence_threshold': 0.4, 'max_prominence': 0.5}
+[2026-07-29T07:20:27Z] [setup] ingest_config_hash=4edae64ed40256e3 (retrieval params NOT modified)
+[2026-07-29T07:20:27Z] [val_tune] 2685 questions / 450 videos; all indexes cache-hit under 4edae64ed40256e3 (0 fresh ingests)
+[2026-07-29T07:21:34Z] [val_tune] 250/2685 ok=250 failed=0 elapsed=67s
+[2026-07-29T07:22:34Z] [val_tune] 500/2685 ok=500 failed=0 elapsed=127s
+[2026-07-29T07:23:34Z] [val_tune] 750/2685 ok=750 failed=0 elapsed=187s
+[2026-07-29T07:24:41Z] [val_tune] 1000/2685 ok=1000 failed=0 elapsed=254s
+[2026-07-29T07:25:40Z] [val_tune] 1250/2685 ok=1250 failed=0 elapsed=313s
+[2026-07-29T07:26:42Z] [val_tune] 1500/2685 ok=1500 failed=0 elapsed=375s
+[2026-07-29T07:27:48Z] [val_tune] 1750/2685 ok=1750 failed=0 elapsed=441s
+[2026-07-29T07:28:48Z] [val_tune] 2000/2685 ok=2000 failed=0 elapsed=501s
+[2026-07-29T07:29:53Z] [val_tune] 2250/2685 ok=2250 failed=0 elapsed=566s
+[2026-07-29T07:30:54Z] [val_tune] 2500/2685 ok=2500 failed=0 elapsed=627s
+[2026-07-29T07:31:43Z] [val_tune] 2685/2685 ok=2685 failed=0 elapsed=676s
+[2026-07-29T07:31:43Z] [val_tune] wrote 2685 rows -> per_question_valtune.csv
+[2026-07-29T07:31:47Z] [val_confirm] 639 questions / 112 videos; all indexes cache-hit under 4edae64ed40256e3 (0 fresh ingests)
+[2026-07-29T07:32:55Z] [val_confirm] 250/639 ok=250 failed=0 elapsed=67s
+[2026-07-29T07:34:00Z] [val_confirm] 500/639 ok=500 failed=0 elapsed=133s
+[2026-07-29T07:34:40Z] [val_confirm] 639/639 ok=639 failed=0 elapsed=173s
+[2026-07-29T07:34:40Z] [val_confirm] wrote 639 rows -> per_question_valconfirm.csv
+[2026-07-29T07:34:41Z] [done] wrote boundary_summary.json

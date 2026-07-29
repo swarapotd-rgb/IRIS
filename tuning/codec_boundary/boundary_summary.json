@@ -1,0 +1,4434 @@
+{
+  "splits": {
+    "val_tune": {
+      "run_meta": {
+        "n_questions": 2685,
+        "n_scored": 2685,
+        "n_failed": 0,
+        "failures": [],
+        "n_videos": 450,
+        "wall_s": 675.5887776920008
+      },
+      "overall": {
+        "anchor_in_gold": {
+          "rate": 0.31359404096834265,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "fwd_peak1_in_gold": {
+          "rate": 0.30935251798561153,
+          "n": 2641,
+          "n_total": 2685
+        },
+        "fwd_peak2_in_gold": {
+          "rate": 0.3057075840500391,
+          "n": 2558,
+          "n_total": 2685
+        },
+        "fwd_peak3_in_gold": {
+          "rate": 0.30305466237942125,
+          "n": 2488,
+          "n_total": 2685
+        },
+        "bwd_peak1_in_gold": {
+          "rate": 0.3116833205226749,
+          "n": 2602,
+          "n_total": 2685
+        },
+        "bwd_peak2_in_gold": {
+          "rate": 0.3001586042823156,
+          "n": 2522,
+          "n_total": 2685
+        },
+        "bwd_peak3_in_gold": {
+          "rate": 0.2999181669394435,
+          "n": 2444,
+          "n_total": 2685
+        },
+        "fwd_scene_in_gold": {
+          "rate": 0.28251956764815506,
+          "n": 2683,
+          "n_total": 2685
+        },
+        "bwd_scene_in_gold": {
+          "rate": 0.2943156320119671,
+          "n": 2674,
+          "n_total": 2685
+        },
+        "c3_next_survivor_in_gold": {
+          "rate": 0.3092203898050975,
+          "n": 2668,
+          "n_total": 2685
+        },
+        "c1_fwd_1s_in_gold": {
+          "rate": 0.3057728119180633,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "c1_fwd_2s_in_gold": {
+          "rate": 0.2860335195530726,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "c1_fwd_3s_in_gold": {
+          "rate": 0.2674115456238361,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "c1_fwd_5s_in_gold": {
+          "rate": 0.22756052141527003,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "c1_bwd_1s_in_gold": {
+          "rate": 0.30130353817504657,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "c1_bwd_2s_in_gold": {
+          "rate": 0.2837988826815642,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "c1_bwd_3s_in_gold": {
+          "rate": 0.260707635009311,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "c1_bwd_5s_in_gold": {
+          "rate": 0.22867783985102422,
+          "n": 2685,
+          "n_total": 2685
+        },
+        "c2_random_survivor_in_gold": {
+          "rate": 0.2211769115442279,
+          "sd": 0.29810967695951807,
+          "n": 2668,
+          "n_total": 2685
+        },
+        "_meta": {
+          "n": 2685,
+          "n_no_forward_peak": 44,
+          "median_dist_to_next_peak_s": 0.4004,
+          "mean_dist_to_next_peak_s": 0.4411469519121545
+        }
+      },
+      "by_type": {
+        "CW": {
+          "anchor_in_gold": {
+            "rate": 0.3242320819112628,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.3180639585133967,
+            "n": 1157,
+            "n_total": 1172
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.3095450490633363,
+            "n": 1121,
+            "n_total": 1172
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.30649588289112534,
+            "n": 1093,
+            "n_total": 1172
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.32722513089005234,
+            "n": 1146,
+            "n_total": 1172
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.30063006300630063,
+            "n": 1111,
+            "n_total": 1172
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.3131970260223048,
+            "n": 1076,
+            "n_total": 1172
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.29266211604095566,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.2950257289879931,
+            "n": 1166,
+            "n_total": 1172
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.32246998284734135,
+            "n": 1166,
+            "n_total": 1172
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.3046075085324232,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.2815699658703072,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.2636518771331058,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.2295221843003413,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.31313993174061433,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.3037542662116041,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.2781569965870307,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.25,
+            "n": 1172,
+            "n_total": 1172
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.21818181818181817,
+            "sd": 0.29621619731672916,
+            "n": 1166,
+            "n_total": 1172
+          },
+          "_meta": {
+            "n": 1172,
+            "n_no_forward_peak": 15,
+            "median_dist_to_next_peak_s": 0.367,
+            "mean_dist_to_next_peak_s": 0.4141810717372515
+          }
+        },
+        "CH": {
+          "anchor_in_gold": {
+            "rate": 0.3647959183673469,
+            "n": 392,
+            "n_total": 392
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.35142118863049093,
+            "n": 387,
+            "n_total": 392
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.34933333333333333,
+            "n": 375,
+            "n_total": 392
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.3527777777777778,
+            "n": 360,
+            "n_total": 392
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.36507936507936506,
+            "n": 378,
+            "n_total": 392
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.36314363143631434,
+            "n": 369,
+            "n_total": 392
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.35795454545454547,
+            "n": 352,
+            "n_total": 392
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.30357142857142855,
+            "n": 392,
+            "n_total": 392
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.34615384615384615,
+            "n": 390,
+            "n_total": 392
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.35459183673469385,
+            "n": 392,
+            "n_total": 392
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.3622448979591837,
+            "n": 392,
+            "n_total": 392
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.3239795918367347,
+            "n": 392,
+            "n_total": 392
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.30612244897959184,
+            "n": 392,
+            "n_total": 392
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.2576530612244898,
+            "n": 392,
+            "n_total": 392
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.3520408163265306,
+            "n": 392,
+            "n_total": 392
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.32653061224489793,
+            "n": 392,
+            "n_total": 392
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.30612244897959184,
+            "n": 392,
+            "n_total": 392
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.2857142857142857,
+            "n": 392,
+            "n_total": 392
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.2585459183673469,
+            "sd": 0.3306374145984085,
+            "n": 392,
+            "n_total": 392
+          },
+          "_meta": {
+            "n": 392,
+            "n_no_forward_peak": 5,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.44781679586563305
+          }
+        },
+        "TC": {
+          "anchor_in_gold": {
+            "rate": 0.3605263157894737,
+            "n": 380,
+            "n_total": 380
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.3512064343163539,
+            "n": 373,
+            "n_total": 380
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.3370473537604457,
+            "n": 359,
+            "n_total": 380
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.3561253561253561,
+            "n": 351,
+            "n_total": 380
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.35054347826086957,
+            "n": 368,
+            "n_total": 380
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.36235955056179775,
+            "n": 356,
+            "n_total": 380
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.3553008595988539,
+            "n": 349,
+            "n_total": 380
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.3324538258575198,
+            "n": 379,
+            "n_total": 380
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.3447368421052632,
+            "n": 380,
+            "n_total": 380
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.36,
+            "n": 375,
+            "n_total": 380
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.3447368421052632,
+            "n": 380,
+            "n_total": 380
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.3447368421052632,
+            "n": 380,
+            "n_total": 380
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.31842105263157894,
+            "n": 380,
+            "n_total": 380
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.2789473684210526,
+            "n": 380,
+            "n_total": 380
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.3473684210526316,
+            "n": 380,
+            "n_total": 380
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.33421052631578946,
+            "n": 380,
+            "n_total": 380
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.3,
+            "n": 380,
+            "n_total": 380
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.2631578947368421,
+            "n": 380,
+            "n_total": 380
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.27026666666666666,
+            "sd": 0.3255189634346293,
+            "n": 375,
+            "n_total": 380
+          },
+          "_meta": {
+            "n": 380,
+            "n_no_forward_peak": 7,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.4692595174262735
+          }
+        },
+        "TN": {
+          "anchor_in_gold": {
+            "rate": 0.2471590909090909,
+            "n": 704,
+            "n_total": 704
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.25290697674418605,
+            "n": 688,
+            "n_total": 704
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.26307922272047835,
+            "n": 669,
+            "n_total": 704
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.24731182795698925,
+            "n": 651,
+            "n_total": 704
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.2411242603550296,
+            "n": 676,
+            "n_total": 704
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.2343032159264931,
+            "n": 653,
+            "n_total": 704
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.2192429022082019,
+            "n": 634,
+            "n_total": 704
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.23044096728307253,
+            "n": 703,
+            "n_total": 704
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.23537803138373753,
+            "n": 701,
+            "n_total": 704
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.23925501432664756,
+            "n": 698,
+            "n_total": 704
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.2599431818181818,
+            "n": 704,
+            "n_total": 704
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.2471590909090909,
+            "n": 704,
+            "n_total": 704
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.23011363636363635,
+            "n": 704,
+            "n_total": 704
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.18607954545454544,
+            "n": 704,
+            "n_total": 704
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.2315340909090909,
+            "n": 704,
+            "n_total": 704
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.19602272727272727,
+            "n": 704,
+            "n_total": 704
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.17755681818181818,
+            "n": 704,
+            "n_total": 704
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.13636363636363635,
+            "n": 704,
+            "n_total": 704
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.18810888252148997,
+            "sd": 0.2634390794909693,
+            "n": 698,
+            "n_total": 704
+          },
+          "_meta": {
+            "n": 704,
+            "n_no_forward_peak": 16,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.4698827034883721
+          }
+        },
+        "TP": {
+          "anchor_in_gold": {
+            "rate": 0.21621621621621623,
+            "n": 37,
+            "n_total": 37
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.2222222222222222,
+            "n": 36,
+            "n_total": 37
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.20588235294117646,
+            "n": 34,
+            "n_total": 37
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.18181818181818182,
+            "n": 33,
+            "n_total": 37
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.17647058823529413,
+            "n": 34,
+            "n_total": 37
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.21212121212121213,
+            "n": 33,
+            "n_total": 37
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.21212121212121213,
+            "n": 33,
+            "n_total": 37
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.21621621621621623,
+            "n": 37,
+            "n_total": 37
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.32432432432432434,
+            "n": 37,
+            "n_total": 37
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.21621621621621623,
+            "n": 37,
+            "n_total": 37
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.21621621621621623,
+            "n": 37,
+            "n_total": 37
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.16216216216216217,
+            "n": 37,
+            "n_total": 37
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.16216216216216217,
+            "n": 37,
+            "n_total": 37
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.10810810810810811,
+            "n": 37,
+            "n_total": 37
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.24324324324324326,
+            "n": 37,
+            "n_total": 37
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.35135135135135137,
+            "n": 37,
+            "n_total": 37
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.40540540540540543,
+            "n": 37,
+            "n_total": 37
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.35135135135135137,
+            "n": 37,
+            "n_total": 37
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.04594594594594595,
+            "sd": 0.10422064586302077,
+            "n": 37,
+            "n_total": 37
+          },
+          "_meta": {
+            "n": 37,
+            "n_no_forward_peak": 1,
+            "median_dist_to_next_peak_s": 0.3003,
+            "mean_dist_to_next_peak_s": 0.39565
+          }
+        }
+      },
+      "by_duration_bucket": {
+        "<2s": {
+          "anchor_in_gold": {
+            "rate": 0.12639405204460966,
+            "n": 269,
+            "n_total": 269
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.10038610038610038,
+            "n": 259,
+            "n_total": 269
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.06,
+            "n": 250,
+            "n_total": 269
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.04149377593360996,
+            "n": 241,
+            "n_total": 269
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.12598425196850394,
+            "n": 254,
+            "n_total": 269
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.0860655737704918,
+            "n": 244,
+            "n_total": 269
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.07083333333333333,
+            "n": 240,
+            "n_total": 269
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.06319702602230483,
+            "n": 269,
+            "n_total": 269
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.08921933085501858,
+            "n": 269,
+            "n_total": 269
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.10486891385767791,
+            "n": 267,
+            "n_total": 269
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.06319702602230483,
+            "n": 269,
+            "n_total": 269
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.048327137546468404,
+            "n": 269,
+            "n_total": 269
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.07063197026022305,
+            "n": 269,
+            "n_total": 269
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.07434944237918216,
+            "n": 269,
+            "n_total": 269
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.10780669144981413,
+            "n": 269,
+            "n_total": 269
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.08178438661710037,
+            "n": 269,
+            "n_total": 269
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.07063197026022305,
+            "n": 269,
+            "n_total": 269
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.09293680297397769,
+            "n": 269,
+            "n_total": 269
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.06367041198501873,
+            "sd": 0.1389177402737016,
+            "n": 267,
+            "n_total": 269
+          },
+          "_meta": {
+            "n": 269,
+            "n_no_forward_peak": 10,
+            "median_dist_to_next_peak_s": 0.367,
+            "mean_dist_to_next_peak_s": 0.42025598455598456
+          }
+        },
+        "2-5s": {
+          "anchor_in_gold": {
+            "rate": 0.2017126546146527,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.1996124031007752,
+            "n": 1032,
+            "n_total": 1051
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.19455645161290322,
+            "n": 992,
+            "n_total": 1051
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.18248175182481752,
+            "n": 959,
+            "n_total": 1051
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.18996062992125984,
+            "n": 1016,
+            "n_total": 1051
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.1780962128966223,
+            "n": 977,
+            "n_total": 1051
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.17372881355932204,
+            "n": 944,
+            "n_total": 1051
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.18173168411037108,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.17574021012416427,
+            "n": 1047,
+            "n_total": 1051
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.20057581573896352,
+            "n": 1042,
+            "n_total": 1051
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.1950523311132255,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.17697431018078022,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.14747859181731685,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.09705042816365367,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.18268315889628925,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.170313986679353,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.1493815413891532,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.120837297811608,
+            "n": 1051,
+            "n_total": 1051
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.1334932821497121,
+            "sd": 0.21693220601979157,
+            "n": 1042,
+            "n_total": 1051
+          },
+          "_meta": {
+            "n": 1051,
+            "n_no_forward_peak": 19,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.4403052325581395
+          }
+        },
+        "5-10s": {
+          "anchor_in_gold": {
+            "rate": 0.3419618528610354,
+            "n": 734,
+            "n_total": 734
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.3406896551724138,
+            "n": 725,
+            "n_total": 734
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.34277620396600567,
+            "n": 706,
+            "n_total": 734
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.339568345323741,
+            "n": 695,
+            "n_total": 734
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.34691011235955055,
+            "n": 712,
+            "n_total": 734
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.3290229885057471,
+            "n": 696,
+            "n_total": 734
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.32983508245877063,
+            "n": 667,
+            "n_total": 734
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.30559345156889495,
+            "n": 733,
+            "n_total": 734
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.32967032967032966,
+            "n": 728,
+            "n_total": 734
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.33287671232876714,
+            "n": 730,
+            "n_total": 734
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.34332425068119893,
+            "n": 734,
+            "n_total": 734
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.31607629427792916,
+            "n": 734,
+            "n_total": 734
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.29291553133514986,
+            "n": 734,
+            "n_total": 734
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.23978201634877383,
+            "n": 734,
+            "n_total": 734
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.3337874659400545,
+            "n": 734,
+            "n_total": 734
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.3079019073569482,
+            "n": 734,
+            "n_total": 734
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.273841961852861,
+            "n": 734,
+            "n_total": 734
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.21798365122615804,
+            "n": 734,
+            "n_total": 734
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.21616438356164383,
+            "sd": 0.26725202377329416,
+            "n": 730,
+            "n_total": 734
+          },
+          "_meta": {
+            "n": 734,
+            "n_no_forward_peak": 9,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.4417217931034483
+          }
+        },
+        ">=10s": {
+          "anchor_in_gold": {
+            "rate": 0.5467511885895404,
+            "n": 631,
+            "n_total": 631
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.5408,
+            "n": 625,
+            "n_total": 631
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.5442622950819672,
+            "n": 610,
+            "n_total": 631
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.5615514333895447,
+            "n": 593,
+            "n_total": 631
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.5467741935483871,
+            "n": 620,
+            "n_total": 631
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.5504132231404959,
+            "n": 605,
+            "n_total": 631
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.5598650927487352,
+            "n": 593,
+            "n_total": 631
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.5174603174603175,
+            "n": 630,
+            "n_total": 631
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.5380952380952381,
+            "n": 630,
+            "n_total": 631
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.548489666136725,
+            "n": 629,
+            "n_total": 631
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.5499207606973059,
+            "n": 631,
+            "n_total": 631
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.5340729001584786,
+            "n": 631,
+            "n_total": 631
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.5213946117274167,
+            "n": 631,
+            "n_total": 631
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.4960380348652932,
+            "n": 631,
+            "n_total": 631
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.5435816164817749,
+            "n": 631,
+            "n_total": 631
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.5309033280507132,
+            "n": 631,
+            "n_total": 631
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.5118858954041204,
+            "n": 631,
+            "n_total": 631
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.4786053882725832,
+            "n": 631,
+            "n_total": 631
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.43910969793322735,
+            "sd": 0.3702959359434294,
+            "n": 629,
+            "n_total": 631
+          },
+          "_meta": {
+            "n": 631,
+            "n_no_forward_peak": 6,
+            "median_dist_to_next_peak_s": 0.3754,
+            "mean_dist_to_next_peak_s": 0.4505272
+          }
+        }
+      },
+      "anchor_outside_gold_recovery": {
+        "n": 1843,
+        "overall": {
+          "anchor_in_gold": {
+            "rate": 0.0,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.02933038184836746,
+            "n": 1807,
+            "n_total": 1843
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.06353749284487693,
+            "n": 1747,
+            "n_total": 1843
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.09605185621685328,
+            "n": 1697,
+            "n_total": 1843
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.031496062992125984,
+            "n": 1778,
+            "n_total": 1843
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.062137049941927994,
+            "n": 1722,
+            "n_total": 1843
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.10119760479041916,
+            "n": 1670,
+            "n_total": 1843
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.049972840847365564,
+            "n": 1841,
+            "n_total": 1843
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.06270447110141766,
+            "n": 1834,
+            "n_total": 1843
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.011475409836065573,
+            "n": 1830,
+            "n_total": 1843
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.061855670103092786,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.09658166033640803,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.12750949538795442,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.1367335865436788,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.05534454693434617,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.09820944112859468,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.12099837221920781,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.13944655453065655,
+            "n": 1843,
+            "n_total": 1843
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.13188524590163936,
+            "sd": 0.20948413858293832,
+            "n": 1830,
+            "n_total": 1843
+          },
+          "_meta": {
+            "n": 1843,
+            "n_no_forward_peak": 36,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.44028223574986164
+          }
+        },
+        "by_type": {
+          "CW": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 792,
+              "n_total": 792
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.02442159383033419,
+              "n": 778,
+              "n_total": 792
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.06,
+              "n": 750,
+              "n_total": 792
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.0877914951989026,
+              "n": 729,
+              "n_total": 792
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.0311284046692607,
+              "n": 771,
+              "n_total": 792
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.06133333333333333,
+              "n": 750,
+              "n_total": 792
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.1136986301369863,
+              "n": 730,
+              "n_total": 792
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.047979797979797977,
+              "n": 792,
+              "n_total": 792
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.06091370558375635,
+              "n": 788,
+              "n_total": 792
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.010165184243964422,
+              "n": 787,
+              "n_total": 792
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.05808080808080808,
+              "n": 792,
+              "n_total": 792
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.08080808080808081,
+              "n": 792,
+              "n_total": 792
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.11237373737373738,
+              "n": 792,
+              "n_total": 792
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.13005050505050506,
+              "n": 792,
+              "n_total": 792
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.05808080808080808,
+              "n": 792,
+              "n_total": 792
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.10984848484848485,
+              "n": 792,
+              "n_total": 792
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.12373737373737374,
+              "n": 792,
+              "n_total": 792
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.1414141414141414,
+              "n": 792,
+              "n_total": 792
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.12941550190597204,
+              "sd": 0.20940871295348362,
+              "n": 787,
+              "n_total": 792
+            },
+            "_meta": {
+              "n": 792,
+              "n_no_forward_peak": 14,
+              "median_dist_to_next_peak_s": 0.367,
+              "mean_dist_to_next_peak_s": 0.4108055269922879
+            }
+          },
+          "CH": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 249,
+              "n_total": 249
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.040983606557377046,
+              "n": 244,
+              "n_total": 249
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.07234042553191489,
+              "n": 235,
+              "n_total": 249
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.09734513274336283,
+              "n": 226,
+              "n_total": 249
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.04184100418410042,
+              "n": 239,
+              "n_total": 249
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.0641025641025641,
+              "n": 234,
+              "n_total": 249
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.0945945945945946,
+              "n": 222,
+              "n_total": 249
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.05622489959839357,
+              "n": 249,
+              "n_total": 249
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.05263157894736842,
+              "n": 247,
+              "n_total": 249
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.024096385542168676,
+              "n": 249,
+              "n_total": 249
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.08433734939759036,
+              "n": 249,
+              "n_total": 249
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.10843373493975904,
+              "n": 249,
+              "n_total": 249
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.14056224899598393,
+              "n": 249,
+              "n_total": 249
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.15261044176706828,
+              "n": 249,
+              "n_total": 249
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.04819277108433735,
+              "n": 249,
+              "n_total": 249
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.09236947791164658,
+              "n": 249,
+              "n_total": 249
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.13654618473895583,
+              "n": 249,
+              "n_total": 249
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.1646586345381526,
+              "n": 249,
+              "n_total": 249
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.13353413654618473,
+              "sd": 0.22407767191660058,
+              "n": 249,
+              "n_total": 249
+            },
+            "_meta": {
+              "n": 249,
+              "n_no_forward_peak": 5,
+              "median_dist_to_next_peak_s": 0.4004,
+              "mean_dist_to_next_peak_s": 0.4551983606557377
+            }
+          },
+          "TC": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 243,
+              "n_total": 243
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.03375527426160337,
+              "n": 237,
+              "n_total": 243
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.05652173913043478,
+              "n": 230,
+              "n_total": 243
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.11555555555555555,
+              "n": 225,
+              "n_total": 243
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.029914529914529916,
+              "n": 234,
+              "n_total": 243
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.08,
+              "n": 225,
+              "n_total": 243
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.12162162162162163,
+              "n": 222,
+              "n_total": 243
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.06198347107438017,
+              "n": 242,
+              "n_total": 243
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.0823045267489712,
+              "n": 243,
+              "n_total": 243
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.012605042016806723,
+              "n": 238,
+              "n_total": 243
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.053497942386831275,
+              "n": 243,
+              "n_total": 243
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.11934156378600823,
+              "n": 243,
+              "n_total": 243
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.15637860082304528,
+              "n": 243,
+              "n_total": 243
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.15637860082304528,
+              "n": 243,
+              "n_total": 243
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.06584362139917696,
+              "n": 243,
+              "n_total": 243
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.11934156378600823,
+              "n": 243,
+              "n_total": 243
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.11934156378600823,
+              "n": 243,
+              "n_total": 243
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.15637860082304528,
+              "n": 243,
+              "n_total": 243
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.148109243697479,
+              "sd": 0.2255865292597535,
+              "n": 238,
+              "n_total": 243
+            },
+            "_meta": {
+              "n": 243,
+              "n_no_forward_peak": 6,
+              "median_dist_to_next_peak_s": 0.4004,
+              "mean_dist_to_next_peak_s": 0.4665101265822785
+            }
+          },
+          "TN": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 530,
+              "n_total": 530
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.03076923076923077,
+              "n": 520,
+              "n_total": 530
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.07114624505928854,
+              "n": 506,
+              "n_total": 530
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.1016260162601626,
+              "n": 492,
+              "n_total": 530
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.02766798418972332,
+              "n": 506,
+              "n_total": 530
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.05154639175257732,
+              "n": 485,
+              "n_total": 530
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.07264957264957266,
+              "n": 468,
+              "n_total": 530
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.045368620037807186,
+              "n": 529,
+              "n_total": 530
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.05502846299810247,
+              "n": 527,
+              "n_total": 530
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.007590132827324478,
+              "n": 527,
+              "n_total": 530
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.06415094339622641,
+              "n": 530,
+              "n_total": 530
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.10754716981132076,
+              "n": 530,
+              "n_total": 530
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.1339622641509434,
+              "n": 530,
+              "n_total": 530
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.13584905660377358,
+              "n": 530,
+              "n_total": 530
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.04716981132075472,
+              "n": 530,
+              "n_total": 530
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.06415094339622641,
+              "n": 530,
+              "n_total": 530
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.09811320754716982,
+              "n": 530,
+              "n_total": 530
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.10754716981132076,
+              "n": 530,
+              "n_total": 530
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.13349146110056925,
+              "sd": 0.1973081452868505,
+              "n": 527,
+              "n_total": 530
+            },
+            "_meta": {
+              "n": 530,
+              "n_no_forward_peak": 10,
+              "median_dist_to_next_peak_s": 0.4004,
+              "mean_dist_to_next_peak_s": 0.4696876923076923
+            }
+          },
+          "TP": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 29,
+              "n_total": 29
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.0,
+              "n": 28,
+              "n_total": 29
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.0,
+              "n": 26,
+              "n_total": 29
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.04,
+              "n": 25,
+              "n_total": 29
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.03571428571428571,
+              "n": 28,
+              "n_total": 29
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.10714285714285714,
+              "n": 28,
+              "n_total": 29
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.14285714285714285,
+              "n": 28,
+              "n_total": 29
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.034482758620689655,
+              "n": 29,
+              "n_total": 29
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.1724137931034483,
+              "n": 29,
+              "n_total": 29
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.0,
+              "n": 29,
+              "n_total": 29
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.0,
+              "n": 29,
+              "n_total": 29
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.034482758620689655,
+              "n": 29,
+              "n_total": 29
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.06896551724137931,
+              "n": 29,
+              "n_total": 29
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.034482758620689655,
+              "n": 29,
+              "n_total": 29
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.10344827586206896,
+              "n": 29,
+              "n_total": 29
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.27586206896551724,
+              "n": 29,
+              "n_total": 29
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.3448275862068966,
+              "n": 29,
+              "n_total": 29
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.3103448275862069,
+              "n": 29,
+              "n_total": 29
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.022413793103448276,
+              "sd": 0.09246267363994429,
+              "n": 29,
+              "n_total": 29
+            },
+            "_meta": {
+              "n": 29,
+              "n_no_forward_peak": 1,
+              "median_dist_to_next_peak_s": 0.2836,
+              "mean_dist_to_next_peak_s": 0.3612285714285714
+            }
+          }
+        }
+      },
+      "verdict_overall": {
+        "fwd_peak1_rate": 0.30935251798561153,
+        "C0_anchor": 0.31359404096834265,
+        "C1_best_fwd": 0.3057728119180633,
+        "C2_random": 0.2211769115442279,
+        "C3_nearest": 0.3092203898050975,
+        "beats": {
+          "vs_C0_anchor": false,
+          "vs_C1_best_fixed_offset": true,
+          "vs_C2_random_survivor": true,
+          "vs_C3_nearest_survivor": true
+        },
+        "beats_all_three_controls": true,
+        "paired_ci": {
+          "vs_C0_anchor": {
+            "n": 2641,
+            "n_clusters": 450,
+            "delta": -0.006436955698599016,
+            "ci95": [
+              -0.013633014001473839,
+              0.000777302759424796
+            ],
+            "excludes_zero": false
+          },
+          "vs_C3_nearest_survivor": {
+            "n": 2641,
+            "n_clusters": 450,
+            "delta": -0.002271866717152594,
+            "ci95": [
+              -0.008746355685131196,
+              0.003762227238525207
+            ],
+            "excludes_zero": false
+          },
+          "vs_C1_best_fixed_offset": {
+            "n": 2641,
+            "n_clusters": 450,
+            "delta": 0.001893222264293828,
+            "ci95": [
+              -0.007224334600760456,
+              0.011131725417439703
+            ],
+            "excludes_zero": false,
+            "offset_s": 1.0
+          }
+        },
+        "beats_all_three_controls_significant": false
+      },
+      "verdict_by_type": {
+        "CW": {
+          "fwd_peak1_rate": 0.3180639585133967,
+          "C0_anchor": 0.3242320819112628,
+          "C1_best_fwd": 0.3046075085324232,
+          "C2_random": 0.21818181818181817,
+          "C3_nearest": 0.32246998284734135,
+          "beats": {
+            "vs_C0_anchor": false,
+            "vs_C1_best_fixed_offset": true,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": false
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 1157,
+              "n_clusters": 411,
+              "delta": -0.00950734658599827,
+              "ci95": [
+                -0.0211864406779661,
+                0.0016849199663016006
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 1157,
+              "n_clusters": 411,
+              "delta": -0.006914433880726016,
+              "ci95": [
+                -0.01647875108412836,
+                0.0017953321364452424
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 1157,
+              "n_clusters": 411,
+              "delta": 0.010371650821089023,
+              "ci95": [
+                -0.004177109440267335,
+                0.024850042844901457
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "CH": {
+          "fwd_peak1_rate": 0.35142118863049093,
+          "C0_anchor": 0.3647959183673469,
+          "C1_best_fwd": 0.3622448979591837,
+          "C2_random": 0.2585459183673469,
+          "C3_nearest": 0.35459183673469385,
+          "beats": {
+            "vs_C0_anchor": false,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": false
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 387,
+              "n_clusters": 254,
+              "delta": -0.01808785529715762,
+              "ci95": [
+                -0.04218362282878412,
+                0.007853403141361256
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 387,
+              "n_clusters": 254,
+              "delta": -0.007751937984496124,
+              "ci95": [
+                -0.02557544757033248,
+                0.008152173913043478
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 387,
+              "n_clusters": 254,
+              "delta": -0.0103359173126615,
+              "ci95": [
+                -0.034210526315789476,
+                0.013297872340425532
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TC": {
+          "fwd_peak1_rate": 0.3512064343163539,
+          "C0_anchor": 0.3605263157894737,
+          "C1_best_fwd": 0.3447368421052632,
+          "C2_random": 0.27026666666666666,
+          "C3_nearest": 0.36,
+          "beats": {
+            "vs_C0_anchor": false,
+            "vs_C1_best_fixed_offset": true,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": false
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 373,
+              "n_clusters": 234,
+              "delta": -0.013404825737265416,
+              "ci95": [
+                -0.036939313984168866,
+                0.010309278350515464
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 373,
+              "n_clusters": 234,
+              "delta": -0.00804289544235925,
+              "ci95": [
+                -0.027700831024930747,
+                0.011111111111111112
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 373,
+              "n_clusters": 234,
+              "delta": 0.002680965147453083,
+              "ci95": [
+                -0.019337016574585635,
+                0.025069637883008356
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TN": {
+          "fwd_peak1_rate": 0.25290697674418605,
+          "C0_anchor": 0.2471590909090909,
+          "C1_best_fwd": 0.2599431818181818,
+          "C2_random": 0.18810888252148997,
+          "C3_nearest": 0.23925501432664756,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 688,
+              "n_clusters": 338,
+              "delta": 0.00872093023255814,
+              "ci95": [
+                -0.005763688760806916,
+                0.02442528735632184
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 688,
+              "n_clusters": 338,
+              "delta": 0.011627906976744186,
+              "ci95": [
+                0.0,
+                0.023391812865497075
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 688,
+              "n_clusters": 338,
+              "delta": -0.005813953488372093,
+              "ci95": [
+                -0.020771513353115726,
+                0.009146341463414634
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TP": {
+          "fwd_peak1_rate": 0.2222222222222222,
+          "C0_anchor": 0.21621621621621623,
+          "C1_best_fwd": 0.21621621621621623,
+          "C2_random": 0.04594594594594595,
+          "C3_nearest": 0.21621621621621623,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": true,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": true,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 36,
+              "n_clusters": 35,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 36,
+              "n_clusters": 35,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 36,
+              "n_clusters": 35,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        }
+      },
+      "verdict_by_type_anchor_outside": {
+        "CW": {
+          "fwd_peak1_rate": 0.02442159383033419,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.13005050505050506,
+          "C2_random": 0.12941550190597204,
+          "C3_nearest": 0.010165184243964422,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 778,
+              "n_clusters": 372,
+              "delta": 0.02442159383033419,
+              "ci95": [
+                0.014248704663212436,
+                0.03576158940397351
+              ],
+              "excludes_zero": true
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 778,
+              "n_clusters": 372,
+              "delta": 0.014138817480719794,
+              "ci95": [
+                0.006435006435006435,
+                0.0228494623655914
+              ],
+              "excludes_zero": true
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 778,
+              "n_clusters": 372,
+              "delta": -0.10668380462724936,
+              "ci95": [
+                -0.13081761006289308,
+                -0.08104738154613467
+              ],
+              "excludes_zero": true,
+              "offset_s": 5.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "CH": {
+          "fwd_peak1_rate": 0.040983606557377046,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.15261044176706828,
+          "C2_random": 0.13353413654618473,
+          "C3_nearest": 0.024096385542168676,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 244,
+              "n_clusters": 187,
+              "delta": 0.040983606557377046,
+              "ci95": [
+                0.01968503937007874,
+                0.06779661016949153
+              ],
+              "excludes_zero": true
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 244,
+              "n_clusters": 187,
+              "delta": 0.01639344262295082,
+              "ci95": [
+                0.003968253968253968,
+                0.03361344537815126
+              ],
+              "excludes_zero": true
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 244,
+              "n_clusters": 187,
+              "delta": -0.10655737704918032,
+              "ci95": [
+                -0.1557377049180328,
+                -0.06048387096774194
+              ],
+              "excludes_zero": true,
+              "offset_s": 5.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TC": {
+          "fwd_peak1_rate": 0.03375527426160337,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.15637860082304528,
+          "C2_random": 0.148109243697479,
+          "C3_nearest": 0.012605042016806723,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 237,
+              "n_clusters": 175,
+              "delta": 0.03375527426160337,
+              "ci95": [
+                0.008771929824561403,
+                0.06382978723404255
+              ],
+              "excludes_zero": true
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 237,
+              "n_clusters": 175,
+              "delta": 0.02109704641350211,
+              "ci95": [
+                0.004016064257028112,
+                0.04484304932735426
+              ],
+              "excludes_zero": true
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 237,
+              "n_clusters": 175,
+              "delta": -0.12236286919831224,
+              "ci95": [
+                -0.17012448132780084,
+                -0.08
+              ],
+              "excludes_zero": true,
+              "offset_s": 3.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TN": {
+          "fwd_peak1_rate": 0.03076923076923077,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.13584905660377358,
+          "C2_random": 0.13349146110056925,
+          "C3_nearest": 0.007590132827324478,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 520,
+              "n_clusters": 294,
+              "delta": 0.03076923076923077,
+              "ci95": [
+                0.017578125,
+                0.04642166344294004
+              ],
+              "excludes_zero": true
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 520,
+              "n_clusters": 294,
+              "delta": 0.023076923076923078,
+              "ci95": [
+                0.011494252873563218,
+                0.036328871892925434
+              ],
+              "excludes_zero": true
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 520,
+              "n_clusters": 294,
+              "delta": -0.10576923076923077,
+              "ci95": [
+                -0.13565891472868216,
+                -0.07706093189964158
+              ],
+              "excludes_zero": true,
+              "offset_s": 5.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TP": {
+          "fwd_peak1_rate": 0.0,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.06896551724137931,
+          "C2_random": 0.022413793103448276,
+          "C3_nearest": 0.0,
+          "beats": {
+            "vs_C0_anchor": false,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": false
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 28,
+              "n_clusters": 28,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 28,
+              "n_clusters": 28,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 28,
+              "n_clusters": 28,
+              "delta": -0.07142857142857142,
+              "ci95": [
+                -0.17857142857142858,
+                0.0
+              ],
+              "excludes_zero": false,
+              "offset_s": 3.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        }
+      }
+    },
+    "val_confirm": {
+      "run_meta": {
+        "n_questions": 639,
+        "n_scored": 639,
+        "n_failed": 0,
+        "failures": [],
+        "n_videos": 112,
+        "wall_s": 172.6848682180007
+      },
+      "overall": {
+        "anchor_in_gold": {
+          "rate": 0.3208137715179969,
+          "n": 639,
+          "n_total": 639
+        },
+        "fwd_peak1_in_gold": {
+          "rate": 0.3275039745627981,
+          "n": 629,
+          "n_total": 639
+        },
+        "fwd_peak2_in_gold": {
+          "rate": 0.33115823817292006,
+          "n": 613,
+          "n_total": 639
+        },
+        "fwd_peak3_in_gold": {
+          "rate": 0.3082077051926298,
+          "n": 597,
+          "n_total": 639
+        },
+        "bwd_peak1_in_gold": {
+          "rate": 0.2993527508090615,
+          "n": 618,
+          "n_total": 639
+        },
+        "bwd_peak2_in_gold": {
+          "rate": 0.2946127946127946,
+          "n": 594,
+          "n_total": 639
+        },
+        "bwd_peak3_in_gold": {
+          "rate": 0.2894736842105263,
+          "n": 570,
+          "n_total": 639
+        },
+        "fwd_scene_in_gold": {
+          "rate": 0.3114241001564945,
+          "n": 639,
+          "n_total": 639
+        },
+        "bwd_scene_in_gold": {
+          "rate": 0.2807570977917981,
+          "n": 634,
+          "n_total": 639
+        },
+        "c3_next_survivor_in_gold": {
+          "rate": 0.3249607535321821,
+          "n": 637,
+          "n_total": 639
+        },
+        "c1_fwd_1s_in_gold": {
+          "rate": 0.3223787167449139,
+          "n": 639,
+          "n_total": 639
+        },
+        "c1_fwd_2s_in_gold": {
+          "rate": 0.29107981220657275,
+          "n": 639,
+          "n_total": 639
+        },
+        "c1_fwd_3s_in_gold": {
+          "rate": 0.2676056338028169,
+          "n": 639,
+          "n_total": 639
+        },
+        "c1_fwd_5s_in_gold": {
+          "rate": 0.23161189358372458,
+          "n": 639,
+          "n_total": 639
+        },
+        "c1_bwd_1s_in_gold": {
+          "rate": 0.2863849765258216,
+          "n": 639,
+          "n_total": 639
+        },
+        "c1_bwd_2s_in_gold": {
+          "rate": 0.27073552425665104,
+          "n": 639,
+          "n_total": 639
+        },
+        "c1_bwd_3s_in_gold": {
+          "rate": 0.24256651017214398,
+          "n": 639,
+          "n_total": 639
+        },
+        "c1_bwd_5s_in_gold": {
+          "rate": 0.21283255086071987,
+          "n": 639,
+          "n_total": 639
+        },
+        "c2_random_survivor_in_gold": {
+          "rate": 0.22668759811616954,
+          "sd": 0.30837679767427134,
+          "n": 637,
+          "n_total": 639
+        },
+        "_meta": {
+          "n": 639,
+          "n_no_forward_peak": 10,
+          "median_dist_to_next_peak_s": 0.4004,
+          "mean_dist_to_next_peak_s": 0.4475815580286168
+        }
+      },
+      "by_type": {
+        "CW": {
+          "anchor_in_gold": {
+            "rate": 0.3380281690140845,
+            "n": 284,
+            "n_total": 284
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.33574007220216606,
+            "n": 277,
+            "n_total": 284
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.3345724907063197,
+            "n": 269,
+            "n_total": 284
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.32575757575757575,
+            "n": 264,
+            "n_total": 284
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.3104693140794224,
+            "n": 277,
+            "n_total": 284
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.3148148148148148,
+            "n": 270,
+            "n_total": 284
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.30916030534351147,
+            "n": 262,
+            "n_total": 284
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.3274647887323944,
+            "n": 284,
+            "n_total": 284
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.30141843971631205,
+            "n": 282,
+            "n_total": 284
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.3321554770318021,
+            "n": 283,
+            "n_total": 284
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.33098591549295775,
+            "n": 284,
+            "n_total": 284
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.3028169014084507,
+            "n": 284,
+            "n_total": 284
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.2852112676056338,
+            "n": 284,
+            "n_total": 284
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.22887323943661972,
+            "n": 284,
+            "n_total": 284
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.30985915492957744,
+            "n": 284,
+            "n_total": 284
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.3028169014084507,
+            "n": 284,
+            "n_total": 284
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.2676056338028169,
+            "n": 284,
+            "n_total": 284
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.22887323943661972,
+            "n": 284,
+            "n_total": 284
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.21943462897526503,
+            "sd": 0.3098678023188409,
+            "n": 283,
+            "n_total": 284
+          },
+          "_meta": {
+            "n": 284,
+            "n_no_forward_peak": 7,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.45369927797833937
+          }
+        },
+        "CH": {
+          "anchor_in_gold": {
+            "rate": 0.32558139534883723,
+            "n": 86,
+            "n_total": 86
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.36470588235294116,
+            "n": 85,
+            "n_total": 86
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.39285714285714285,
+            "n": 84,
+            "n_total": 86
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.38095238095238093,
+            "n": 84,
+            "n_total": 86
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.30120481927710846,
+            "n": 83,
+            "n_total": 86
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.2625,
+            "n": 80,
+            "n_total": 86
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.25675675675675674,
+            "n": 74,
+            "n_total": 86
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.36046511627906974,
+            "n": 86,
+            "n_total": 86
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.29069767441860467,
+            "n": 86,
+            "n_total": 86
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.35294117647058826,
+            "n": 85,
+            "n_total": 86
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.37209302325581395,
+            "n": 86,
+            "n_total": 86
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.3372093023255814,
+            "n": 86,
+            "n_total": 86
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.29069767441860467,
+            "n": 86,
+            "n_total": 86
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.2558139534883721,
+            "n": 86,
+            "n_total": 86
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.29069767441860467,
+            "n": 86,
+            "n_total": 86
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.20930232558139536,
+            "n": 86,
+            "n_total": 86
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.1744186046511628,
+            "n": 86,
+            "n_total": 86
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.1511627906976744,
+            "n": 86,
+            "n_total": 86
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.23470588235294118,
+            "sd": 0.2886096008973087,
+            "n": 85,
+            "n_total": 86
+          },
+          "_meta": {
+            "n": 86,
+            "n_no_forward_peak": 1,
+            "median_dist_to_next_peak_s": 0.3754,
+            "mean_dist_to_next_peak_s": 0.44858941176470585
+          }
+        },
+        "TC": {
+          "anchor_in_gold": {
+            "rate": 0.47126436781609193,
+            "n": 87,
+            "n_total": 87
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.4418604651162791,
+            "n": 86,
+            "n_total": 87
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.47619047619047616,
+            "n": 84,
+            "n_total": 87
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.4444444444444444,
+            "n": 81,
+            "n_total": 87
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.43023255813953487,
+            "n": 86,
+            "n_total": 87
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.45,
+            "n": 80,
+            "n_total": 87
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.4473684210526316,
+            "n": 76,
+            "n_total": 87
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.4482758620689655,
+            "n": 87,
+            "n_total": 87
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.3793103448275862,
+            "n": 87,
+            "n_total": 87
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.4482758620689655,
+            "n": 87,
+            "n_total": 87
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.45977011494252873,
+            "n": 87,
+            "n_total": 87
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.40229885057471265,
+            "n": 87,
+            "n_total": 87
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.3793103448275862,
+            "n": 87,
+            "n_total": 87
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.3563218390804598,
+            "n": 87,
+            "n_total": 87
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.41379310344827586,
+            "n": 87,
+            "n_total": 87
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.40229885057471265,
+            "n": 87,
+            "n_total": 87
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.3793103448275862,
+            "n": 87,
+            "n_total": 87
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.27586206896551724,
+            "n": 87,
+            "n_total": 87
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.29482758620689653,
+            "sd": 0.3544491016715698,
+            "n": 87,
+            "n_total": 87
+          },
+          "_meta": {
+            "n": 87,
+            "n_no_forward_peak": 1,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.4490755813953488
+          }
+        },
+        "TN": {
+          "anchor_in_gold": {
+            "rate": 0.2275449101796407,
+            "n": 167,
+            "n_total": 167
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.25301204819277107,
+            "n": 166,
+            "n_total": 167
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.22839506172839505,
+            "n": 162,
+            "n_total": 167
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.17532467532467533,
+            "n": 154,
+            "n_total": 167
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.22784810126582278,
+            "n": 158,
+            "n_total": 167
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.21333333333333335,
+            "n": 150,
+            "n_total": 167
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.20833333333333334,
+            "n": 144,
+            "n_total": 167
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.20958083832335328,
+            "n": 167,
+            "n_total": 167
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.1951219512195122,
+            "n": 164,
+            "n_total": 167
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.25149700598802394,
+            "n": 167,
+            "n_total": 167
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.2215568862275449,
+            "n": 167,
+            "n_total": 167
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.19760479041916168,
+            "n": 167,
+            "n_total": 167
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.18562874251497005,
+            "n": 167,
+            "n_total": 167
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.17365269461077845,
+            "n": 167,
+            "n_total": 167
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.19760479041916168,
+            "n": 167,
+            "n_total": 167
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.18562874251497005,
+            "n": 167,
+            "n_total": 167
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.16766467065868262,
+            "n": 167,
+            "n_total": 167
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.18562874251497005,
+            "n": 167,
+            "n_total": 167
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.205688622754491,
+            "sd": 0.29151776897993253,
+            "n": 167,
+            "n_total": 167
+          },
+          "_meta": {
+            "n": 167,
+            "n_no_forward_peak": 1,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.4494006024096385
+          }
+        },
+        "TP": {
+          "anchor_in_gold": {
+            "rate": 0.13333333333333333,
+            "n": 15,
+            "n_total": 15
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.13333333333333333,
+            "n": 15,
+            "n_total": 15
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.21428571428571427,
+            "n": 14,
+            "n_total": 15
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.21428571428571427,
+            "n": 14,
+            "n_total": 15
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.07142857142857142,
+            "n": 14,
+            "n_total": 15
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.07142857142857142,
+            "n": 14,
+            "n_total": 15
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.07142857142857142,
+            "n": 14,
+            "n_total": 15
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.06666666666666667,
+            "n": 15,
+            "n_total": 15
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.2,
+            "n": 15,
+            "n_total": 15
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.13333333333333333,
+            "n": 15,
+            "n_total": 15
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.2,
+            "n": 15,
+            "n_total": 15
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.2,
+            "n": 15,
+            "n_total": 15
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.06666666666666667,
+            "n": 15,
+            "n_total": 15
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.06666666666666667,
+            "n": 15,
+            "n_total": 15
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.06666666666666667,
+            "n": 15,
+            "n_total": 15
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.2,
+            "n": 15,
+            "n_total": 15
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.2,
+            "n": 15,
+            "n_total": 15
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.2,
+            "n": 15,
+            "n_total": 15
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.15666666666666668,
+            "sd": 0.2048305532764962,
+            "n": 15,
+            "n_total": 15
+          },
+          "_meta": {
+            "n": 15,
+            "n_no_forward_peak": 0,
+            "median_dist_to_next_peak_s": 0.2667,
+            "mean_dist_to_next_peak_s": 0.3002
+          }
+        }
+      },
+      "by_duration_bucket": {
+        "<2s": {
+          "anchor_in_gold": {
+            "rate": 0.14035087719298245,
+            "n": 57,
+            "n_total": 57
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.11320754716981132,
+            "n": 53,
+            "n_total": 57
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.14,
+            "n": 50,
+            "n_total": 57
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.10416666666666667,
+            "n": 48,
+            "n_total": 57
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.16071428571428573,
+            "n": 56,
+            "n_total": 57
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.11320754716981132,
+            "n": 53,
+            "n_total": 57
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.12,
+            "n": 50,
+            "n_total": 57
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.10526315789473684,
+            "n": 57,
+            "n_total": 57
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.08771929824561403,
+            "n": 57,
+            "n_total": 57
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.15789473684210525,
+            "n": 57,
+            "n_total": 57
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.10526315789473684,
+            "n": 57,
+            "n_total": 57
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.017543859649122806,
+            "n": 57,
+            "n_total": 57
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.03508771929824561,
+            "n": 57,
+            "n_total": 57
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.017543859649122806,
+            "n": 57,
+            "n_total": 57
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.14035087719298245,
+            "n": 57,
+            "n_total": 57
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.10526315789473684,
+            "n": 57,
+            "n_total": 57
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.0,
+            "n": 57,
+            "n_total": 57
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.017543859649122806,
+            "n": 57,
+            "n_total": 57
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.14473684210526316,
+            "sd": 0.2984880335734063,
+            "n": 57,
+            "n_total": 57
+          },
+          "_meta": {
+            "n": 57,
+            "n_no_forward_peak": 4,
+            "median_dist_to_next_peak_s": 0.2669,
+            "mean_dist_to_next_peak_s": 0.3403301886792453
+          }
+        },
+        "2-5s": {
+          "anchor_in_gold": {
+            "rate": 0.22406639004149378,
+            "n": 241,
+            "n_total": 241
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.226890756302521,
+            "n": 238,
+            "n_total": 241
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.24034334763948498,
+            "n": 233,
+            "n_total": 241
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.19555555555555557,
+            "n": 225,
+            "n_total": 241
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.18614718614718614,
+            "n": 231,
+            "n_total": 241
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.182648401826484,
+            "n": 219,
+            "n_total": 241
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.14354066985645933,
+            "n": 209,
+            "n_total": 241
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.2074688796680498,
+            "n": 241,
+            "n_total": 241
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.17573221757322174,
+            "n": 239,
+            "n_total": 241
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.22916666666666666,
+            "n": 240,
+            "n_total": 241
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.23236514522821577,
+            "n": 241,
+            "n_total": 241
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.21161825726141079,
+            "n": 241,
+            "n_total": 241
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.17842323651452283,
+            "n": 241,
+            "n_total": 241
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.12033195020746888,
+            "n": 241,
+            "n_total": 241
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.17427385892116182,
+            "n": 241,
+            "n_total": 241
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.14107883817427386,
+            "n": 241,
+            "n_total": 241
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.12033195020746888,
+            "n": 241,
+            "n_total": 241
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.12033195020746888,
+            "n": 241,
+            "n_total": 241
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.139375,
+            "sd": 0.23765702046226195,
+            "n": 240,
+            "n_total": 241
+          },
+          "_meta": {
+            "n": 241,
+            "n_no_forward_peak": 3,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.46801806722689077
+          }
+        },
+        "5-10s": {
+          "anchor_in_gold": {
+            "rate": 0.3020833333333333,
+            "n": 192,
+            "n_total": 192
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.30526315789473685,
+            "n": 190,
+            "n_total": 192
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.3081081081081081,
+            "n": 185,
+            "n_total": 192
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.281767955801105,
+            "n": 181,
+            "n_total": 192
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.26881720430107525,
+            "n": 186,
+            "n_total": 192
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.25824175824175827,
+            "n": 182,
+            "n_total": 192
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.2774566473988439,
+            "n": 173,
+            "n_total": 192
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.2916666666666667,
+            "n": 192,
+            "n_total": 192
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.2774869109947644,
+            "n": 191,
+            "n_total": 192
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.2931937172774869,
+            "n": 191,
+            "n_total": 192
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.3020833333333333,
+            "n": 192,
+            "n_total": 192
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.2552083333333333,
+            "n": 192,
+            "n_total": 192
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.22395833333333334,
+            "n": 192,
+            "n_total": 192
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.20833333333333334,
+            "n": 192,
+            "n_total": 192
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.265625,
+            "n": 192,
+            "n_total": 192
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.265625,
+            "n": 192,
+            "n_total": 192
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.2552083333333333,
+            "n": 192,
+            "n_total": 192
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.22395833333333334,
+            "n": 192,
+            "n_total": 192
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.1730366492146597,
+            "sd": 0.23772083966222787,
+            "n": 191,
+            "n_total": 192
+          },
+          "_meta": {
+            "n": 192,
+            "n_no_forward_peak": 2,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.4412084210526316
+          }
+        },
+        ">=10s": {
+          "anchor_in_gold": {
+            "rate": 0.5704697986577181,
+            "n": 149,
+            "n_total": 149
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.5945945945945946,
+            "n": 148,
+            "n_total": 149
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.5724137931034483,
+            "n": 145,
+            "n_total": 149
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.5874125874125874,
+            "n": 143,
+            "n_total": 149
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.5724137931034483,
+            "n": 145,
+            "n_total": 149
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.5857142857142857,
+            "n": 140,
+            "n_total": 149
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.5869565217391305,
+            "n": 138,
+            "n_total": 149
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.5838926174496645,
+            "n": 149,
+            "n_total": 149
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.5306122448979592,
+            "n": 147,
+            "n_total": 149
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.5838926174496645,
+            "n": 149,
+            "n_total": 149
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.5771812080536913,
+            "n": 149,
+            "n_total": 149
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.5704697986577181,
+            "n": 149,
+            "n_total": 149
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.5570469798657718,
+            "n": 149,
+            "n_total": 149
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.5234899328859061,
+            "n": 149,
+            "n_total": 149
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.5503355704697986,
+            "n": 149,
+            "n_total": 149
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.5503355704697986,
+            "n": 149,
+            "n_total": 149
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.5167785234899329,
+            "n": 149,
+            "n_total": 149
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.4228187919463087,
+            "n": 149,
+            "n_total": 149
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.4674496644295302,
+            "sd": 0.3640712268287421,
+            "n": 149,
+            "n_total": 149
+          },
+          "_meta": {
+            "n": 149,
+            "n_no_forward_peak": 1,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.46130675675675675
+          }
+        }
+      },
+      "anchor_outside_gold_recovery": {
+        "n": 434,
+        "overall": {
+          "anchor_in_gold": {
+            "rate": 0.0,
+            "n": 434,
+            "n_total": 434
+          },
+          "fwd_peak1_in_gold": {
+            "rate": 0.030373831775700934,
+            "n": 428,
+            "n_total": 434
+          },
+          "fwd_peak2_in_gold": {
+            "rate": 0.07211538461538461,
+            "n": 416,
+            "n_total": 434
+          },
+          "fwd_peak3_in_gold": {
+            "rate": 0.09158415841584158,
+            "n": 404,
+            "n_total": 434
+          },
+          "bwd_peak1_in_gold": {
+            "rate": 0.031026252983293555,
+            "n": 419,
+            "n_total": 434
+          },
+          "bwd_peak2_in_gold": {
+            "rate": 0.05955334987593052,
+            "n": 403,
+            "n_total": 434
+          },
+          "bwd_peak3_in_gold": {
+            "rate": 0.09635416666666667,
+            "n": 384,
+            "n_total": 434
+          },
+          "fwd_scene_in_gold": {
+            "rate": 0.0576036866359447,
+            "n": 434,
+            "n_total": 434
+          },
+          "bwd_scene_in_gold": {
+            "rate": 0.06293706293706294,
+            "n": 429,
+            "n_total": 434
+          },
+          "c3_next_survivor_in_gold": {
+            "rate": 0.016203703703703703,
+            "n": 432,
+            "n_total": 434
+          },
+          "c1_fwd_1s_in_gold": {
+            "rate": 0.06912442396313365,
+            "n": 434,
+            "n_total": 434
+          },
+          "c1_fwd_2s_in_gold": {
+            "rate": 0.0967741935483871,
+            "n": 434,
+            "n_total": 434
+          },
+          "c1_fwd_3s_in_gold": {
+            "rate": 0.11981566820276497,
+            "n": 434,
+            "n_total": 434
+          },
+          "c1_fwd_5s_in_gold": {
+            "rate": 0.1313364055299539,
+            "n": 434,
+            "n_total": 434
+          },
+          "c1_bwd_1s_in_gold": {
+            "rate": 0.052995391705069124,
+            "n": 434,
+            "n_total": 434
+          },
+          "c1_bwd_2s_in_gold": {
+            "rate": 0.08755760368663594,
+            "n": 434,
+            "n_total": 434
+          },
+          "c1_bwd_3s_in_gold": {
+            "rate": 0.09907834101382489,
+            "n": 434,
+            "n_total": 434
+          },
+          "c1_bwd_5s_in_gold": {
+            "rate": 0.1313364055299539,
+            "n": 434,
+            "n_total": 434
+          },
+          "c2_random_survivor_in_gold": {
+            "rate": 0.12268518518518519,
+            "sd": 0.19762879757862495,
+            "n": 432,
+            "n_total": 434
+          },
+          "_meta": {
+            "n": 434,
+            "n_no_forward_peak": 6,
+            "median_dist_to_next_peak_s": 0.4004,
+            "mean_dist_to_next_peak_s": 0.45855981308411214
+          }
+        },
+        "by_type": {
+          "CW": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 188,
+              "n_total": 188
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.021739130434782608,
+              "n": 184,
+              "n_total": 188
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.07303370786516854,
+              "n": 178,
+              "n_total": 188
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.10404624277456648,
+              "n": 173,
+              "n_total": 188
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.02702702702702703,
+              "n": 185,
+              "n_total": 188
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.06557377049180328,
+              "n": 183,
+              "n_total": 188
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.11173184357541899,
+              "n": 179,
+              "n_total": 188
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.06382978723404255,
+              "n": 188,
+              "n_total": 188
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.0967741935483871,
+              "n": 186,
+              "n_total": 188
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.0,
+              "n": 187,
+              "n_total": 188
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.06914893617021277,
+              "n": 188,
+              "n_total": 188
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.11170212765957446,
+              "n": 188,
+              "n_total": 188
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.14361702127659576,
+              "n": 188,
+              "n_total": 188
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.1276595744680851,
+              "n": 188,
+              "n_total": 188
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.05851063829787234,
+              "n": 188,
+              "n_total": 188
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.11170212765957446,
+              "n": 188,
+              "n_total": 188
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.11702127659574468,
+              "n": 188,
+              "n_total": 188
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.1276595744680851,
+              "n": 188,
+              "n_total": 188
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.11229946524064172,
+              "sd": 0.2000897022092724,
+              "n": 187,
+              "n_total": 188
+            },
+            "_meta": {
+              "n": 188,
+              "n_no_forward_peak": 4,
+              "median_dist_to_next_peak_s": 0.4669,
+              "mean_dist_to_next_peak_s": 0.48597065217391305
+            }
+          },
+          "CH": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 58,
+              "n_total": 58
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.05263157894736842,
+              "n": 57,
+              "n_total": 58
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.10714285714285714,
+              "n": 56,
+              "n_total": 58
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.14285714285714285,
+              "n": 56,
+              "n_total": 58
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.03508771929824561,
+              "n": 57,
+              "n_total": 58
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.037037037037037035,
+              "n": 54,
+              "n_total": 58
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.08333333333333333,
+              "n": 48,
+              "n_total": 58
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.10344827586206896,
+              "n": 58,
+              "n_total": 58
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.034482758620689655,
+              "n": 58,
+              "n_total": 58
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.03508771929824561,
+              "n": 57,
+              "n_total": 58
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.10344827586206896,
+              "n": 58,
+              "n_total": 58
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.10344827586206896,
+              "n": 58,
+              "n_total": 58
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.1206896551724138,
+              "n": 58,
+              "n_total": 58
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.13793103448275862,
+              "n": 58,
+              "n_total": 58
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.05172413793103448,
+              "n": 58,
+              "n_total": 58
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.05172413793103448,
+              "n": 58,
+              "n_total": 58
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.034482758620689655,
+              "n": 58,
+              "n_total": 58
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.05172413793103448,
+              "n": 58,
+              "n_total": 58
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.1280701754385965,
+              "sd": 0.17117179834625804,
+              "n": 57,
+              "n_total": 58
+            },
+            "_meta": {
+              "n": 58,
+              "n_no_forward_peak": 1,
+              "median_dist_to_next_peak_s": 0.375,
+              "mean_dist_to_next_peak_s": 0.42479298245614033
+            }
+          },
+          "TC": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 46,
+              "n_total": 46
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.022222222222222223,
+              "n": 45,
+              "n_total": 46
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.11363636363636363,
+              "n": 44,
+              "n_total": 46
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.0975609756097561,
+              "n": 41,
+              "n_total": 46
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.022222222222222223,
+              "n": 45,
+              "n_total": 46
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.04878048780487805,
+              "n": 41,
+              "n_total": 46
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.05263157894736842,
+              "n": 38,
+              "n_total": 46
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.08695652173913043,
+              "n": 46,
+              "n_total": 46
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.0,
+              "n": 46,
+              "n_total": 46
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.021739130434782608,
+              "n": 46,
+              "n_total": 46
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.10869565217391304,
+              "n": 46,
+              "n_total": 46
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.08695652173913043,
+              "n": 46,
+              "n_total": 46
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.10869565217391304,
+              "n": 46,
+              "n_total": 46
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.1956521739130435,
+              "n": 46,
+              "n_total": 46
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.021739130434782608,
+              "n": 46,
+              "n_total": 46
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.021739130434782608,
+              "n": 46,
+              "n_total": 46
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.08695652173913043,
+              "n": 46,
+              "n_total": 46
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.15217391304347827,
+              "n": 46,
+              "n_total": 46
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.14456521739130435,
+              "sd": 0.24164928342843164,
+              "n": 46,
+              "n_total": 46
+            },
+            "_meta": {
+              "n": 46,
+              "n_no_forward_peak": 1,
+              "median_dist_to_next_peak_s": 0.4004,
+              "mean_dist_to_next_peak_s": 0.45030666666666663
+            }
+          },
+          "TN": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 129,
+              "n_total": 129
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.03875968992248062,
+              "n": 129,
+              "n_total": 129
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.03968253968253968,
+              "n": 126,
+              "n_total": 129
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.04918032786885246,
+              "n": 122,
+              "n_total": 129
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.041666666666666664,
+              "n": 120,
+              "n_total": 129
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.07079646017699115,
+              "n": 113,
+              "n_total": 129
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.102803738317757,
+              "n": 107,
+              "n_total": 129
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.023255813953488372,
+              "n": 129,
+              "n_total": 129
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.03968253968253968,
+              "n": 126,
+              "n_total": 129
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.031007751937984496,
+              "n": 129,
+              "n_total": 129
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.03875968992248062,
+              "n": 129,
+              "n_total": 129
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.07751937984496124,
+              "n": 129,
+              "n_total": 129
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.10077519379844961,
+              "n": 129,
+              "n_total": 129
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.11627906976744186,
+              "n": 129,
+              "n_total": 129
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.06201550387596899,
+              "n": 129,
+              "n_total": 129
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.08527131782945736,
+              "n": 129,
+              "n_total": 129
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.10077519379844961,
+              "n": 129,
+              "n_total": 129
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.16279069767441862,
+              "n": 129,
+              "n_total": 129
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.12906976744186047,
+              "sd": 0.1897262077104636,
+              "n": 129,
+              "n_total": 129
+            },
+            "_meta": {
+              "n": 129,
+              "n_no_forward_peak": 0,
+              "median_dist_to_next_peak_s": 0.4004,
+              "mean_dist_to_next_peak_s": 0.45280387596899224
+            }
+          },
+          "TP": {
+            "anchor_in_gold": {
+              "rate": 0.0,
+              "n": 13,
+              "n_total": 13
+            },
+            "fwd_peak1_in_gold": {
+              "rate": 0.0,
+              "n": 13,
+              "n_total": 13
+            },
+            "fwd_peak2_in_gold": {
+              "rate": 0.08333333333333333,
+              "n": 12,
+              "n_total": 13
+            },
+            "fwd_peak3_in_gold": {
+              "rate": 0.08333333333333333,
+              "n": 12,
+              "n_total": 13
+            },
+            "bwd_peak1_in_gold": {
+              "rate": 0.0,
+              "n": 12,
+              "n_total": 13
+            },
+            "bwd_peak2_in_gold": {
+              "rate": 0.0,
+              "n": 12,
+              "n_total": 13
+            },
+            "bwd_peak3_in_gold": {
+              "rate": 0.0,
+              "n": 12,
+              "n_total": 13
+            },
+            "fwd_scene_in_gold": {
+              "rate": 0.0,
+              "n": 13,
+              "n_total": 13
+            },
+            "bwd_scene_in_gold": {
+              "rate": 0.15384615384615385,
+              "n": 13,
+              "n_total": 13
+            },
+            "c3_next_survivor_in_gold": {
+              "rate": 0.0,
+              "n": 13,
+              "n_total": 13
+            },
+            "c1_fwd_1s_in_gold": {
+              "rate": 0.07692307692307693,
+              "n": 13,
+              "n_total": 13
+            },
+            "c1_fwd_2s_in_gold": {
+              "rate": 0.07692307692307693,
+              "n": 13,
+              "n_total": 13
+            },
+            "c1_fwd_3s_in_gold": {
+              "rate": 0.0,
+              "n": 13,
+              "n_total": 13
+            },
+            "c1_fwd_5s_in_gold": {
+              "rate": 0.07692307692307693,
+              "n": 13,
+              "n_total": 13
+            },
+            "c1_bwd_1s_in_gold": {
+              "rate": 0.0,
+              "n": 13,
+              "n_total": 13
+            },
+            "c1_bwd_2s_in_gold": {
+              "rate": 0.15384615384615385,
+              "n": 13,
+              "n_total": 13
+            },
+            "c1_bwd_3s_in_gold": {
+              "rate": 0.15384615384615385,
+              "n": 13,
+              "n_total": 13
+            },
+            "c1_bwd_5s_in_gold": {
+              "rate": 0.15384615384615385,
+              "n": 13,
+              "n_total": 13
+            },
+            "c2_random_survivor_in_gold": {
+              "rate": 0.1076923076923077,
+              "sd": 0.16034356604366024,
+              "n": 13,
+              "n_total": 13
+            },
+            "_meta": {
+              "n": 13,
+              "n_no_forward_peak": 0,
+              "median_dist_to_next_peak_s": 0.25,
+              "mean_dist_to_next_peak_s": 0.30433076923076924
+            }
+          }
+        }
+      },
+      "verdict_overall": {
+        "fwd_peak1_rate": 0.3275039745627981,
+        "C0_anchor": 0.3208137715179969,
+        "C1_best_fwd": 0.3223787167449139,
+        "C2_random": 0.22668759811616954,
+        "C3_nearest": 0.3249607535321821,
+        "beats": {
+          "vs_C0_anchor": true,
+          "vs_C1_best_fixed_offset": true,
+          "vs_C2_random_survivor": true,
+          "vs_C3_nearest_survivor": true
+        },
+        "beats_all_three_controls": true,
+        "paired_ci": {
+          "vs_C0_anchor": {
+            "n": 629,
+            "n_clusters": 112,
+            "delta": 0.00794912559618442,
+            "ci95": [
+              -0.0064,
+              0.023255813953488372
+            ],
+            "excludes_zero": false
+          },
+          "vs_C3_nearest_survivor": {
+            "n": 629,
+            "n_clusters": 112,
+            "delta": 0.0047694753577106515,
+            "ci95": [
+              -0.001589825119236884,
+              0.0121580547112462
+            ],
+            "excludes_zero": false
+          },
+          "vs_C1_best_fixed_offset": {
+            "n": 629,
+            "n_clusters": 112,
+            "delta": 0.0,
+            "ci95": [
+              -0.017830609212481426,
+              0.0183206106870229
+            ],
+            "excludes_zero": false,
+            "offset_s": 1.0
+          }
+        },
+        "beats_all_three_controls_significant": false
+      },
+      "verdict_by_type": {
+        "CW": {
+          "fwd_peak1_rate": 0.33574007220216606,
+          "C0_anchor": 0.3380281690140845,
+          "C1_best_fwd": 0.33098591549295775,
+          "C2_random": 0.21943462897526503,
+          "C3_nearest": 0.3321554770318021,
+          "beats": {
+            "vs_C0_anchor": false,
+            "vs_C1_best_fixed_offset": true,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": true,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 277,
+              "n_clusters": 101,
+              "delta": 0.0,
+              "ci95": [
+                -0.017241379310344827,
+                0.017064846416382253
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 277,
+              "n_clusters": 101,
+              "delta": 0.007220216606498195,
+              "ci95": [
+                -0.006993006993006993,
+                0.02112676056338028
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 277,
+              "n_clusters": 101,
+              "delta": -0.0036101083032490976,
+              "ci95": [
+                -0.031578947368421054,
+                0.02364864864864865
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "CH": {
+          "fwd_peak1_rate": 0.36470588235294116,
+          "C0_anchor": 0.32558139534883723,
+          "C1_best_fwd": 0.37209302325581395,
+          "C2_random": 0.23470588235294118,
+          "C3_nearest": 0.35294117647058826,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 85,
+              "n_clusters": 60,
+              "delta": 0.03529411764705882,
+              "ci95": [
+                0.0,
+                0.08235294117647059
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 85,
+              "n_clusters": 60,
+              "delta": 0.011764705882352941,
+              "ci95": [
+                0.0,
+                0.0379746835443038
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 85,
+              "n_clusters": 60,
+              "delta": -0.011764705882352941,
+              "ci95": [
+                -0.06666666666666667,
+                0.03614457831325301
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TC": {
+          "fwd_peak1_rate": 0.4418604651162791,
+          "C0_anchor": 0.47126436781609193,
+          "C1_best_fwd": 0.45977011494252873,
+          "C2_random": 0.29482758620689653,
+          "C3_nearest": 0.4482758620689655,
+          "beats": {
+            "vs_C0_anchor": false,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": false
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 86,
+              "n_clusters": 52,
+              "delta": -0.03488372093023256,
+              "ci95": [
+                -0.09090909090909091,
+                0.012195121951219513
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 86,
+              "n_clusters": 52,
+              "delta": -0.011627906976744186,
+              "ci95": [
+                -0.0379746835443038,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 86,
+              "n_clusters": 52,
+              "delta": -0.023255813953488372,
+              "ci95": [
+                -0.08139534883720931,
+                0.030612244897959183
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TN": {
+          "fwd_peak1_rate": 0.25301204819277107,
+          "C0_anchor": 0.2275449101796407,
+          "C1_best_fwd": 0.2215568862275449,
+          "C2_random": 0.205688622754491,
+          "C3_nearest": 0.25149700598802394,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": true,
+            "vs_C2_random_survivor": true,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": true,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 166,
+              "n_clusters": 81,
+              "delta": 0.030120481927710843,
+              "ci95": [
+                0.0056179775280898875,
+                0.06493506493506493
+              ],
+              "excludes_zero": true
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 166,
+              "n_clusters": 81,
+              "delta": 0.006024096385542169,
+              "ci95": [
+                0.0,
+                0.01935483870967742
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 166,
+              "n_clusters": 81,
+              "delta": 0.030120481927710843,
+              "ci95": [
+                0.005988023952095809,
+                0.05847953216374269
+              ],
+              "excludes_zero": true,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TP": {
+          "fwd_peak1_rate": 0.13333333333333333,
+          "C0_anchor": 0.13333333333333333,
+          "C1_best_fwd": 0.2,
+          "C2_random": 0.15666666666666668,
+          "C3_nearest": 0.13333333333333333,
+          "beats": {
+            "vs_C0_anchor": false,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": false
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 15,
+              "n_clusters": 14,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 15,
+              "n_clusters": 14,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 15,
+              "n_clusters": 14,
+              "delta": -0.06666666666666667,
+              "ci95": [
+                -0.21428571428571427,
+                0.0
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        }
+      },
+      "verdict_by_type_anchor_outside": {
+        "CW": {
+          "fwd_peak1_rate": 0.021739130434782608,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.14361702127659576,
+          "C2_random": 0.11229946524064172,
+          "C3_nearest": 0.0,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 184,
+              "n_clusters": 92,
+              "delta": 0.021739130434782608,
+              "ci95": [
+                0.005128205128205128,
+                0.044444444444444446
+              ],
+              "excludes_zero": true
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 184,
+              "n_clusters": 92,
+              "delta": 0.021739130434782608,
+              "ci95": [
+                0.005128205128205128,
+                0.044444444444444446
+              ],
+              "excludes_zero": true
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 184,
+              "n_clusters": 92,
+              "delta": -0.125,
+              "ci95": [
+                -0.18686868686868688,
+                -0.06878306878306878
+              ],
+              "excludes_zero": true,
+              "offset_s": 3.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "CH": {
+          "fwd_peak1_rate": 0.05263157894736842,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.13793103448275862,
+          "C2_random": 0.1280701754385965,
+          "C3_nearest": 0.03508771929824561,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 57,
+              "n_clusters": 44,
+              "delta": 0.05263157894736842,
+              "ci95": [
+                0.0,
+                0.12
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 57,
+              "n_clusters": 44,
+              "delta": 0.017543859649122806,
+              "ci95": [
+                0.0,
+                0.058823529411764705
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 57,
+              "n_clusters": 44,
+              "delta": -0.08771929824561403,
+              "ci95": [
+                -0.1774193548387097,
+                0.0
+              ],
+              "excludes_zero": false,
+              "offset_s": 5.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TC": {
+          "fwd_peak1_rate": 0.022222222222222223,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.1956521739130435,
+          "C2_random": 0.14456521739130435,
+          "C3_nearest": 0.021739130434782608,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 45,
+              "n_clusters": 35,
+              "delta": 0.022222222222222223,
+              "ci95": [
+                0.0,
+                0.06976744186046512
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 45,
+              "n_clusters": 35,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 45,
+              "n_clusters": 35,
+              "delta": -0.17777777777777778,
+              "ci95": [
+                -0.30952380952380953,
+                -0.06521739130434782
+              ],
+              "excludes_zero": true,
+              "offset_s": 5.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TN": {
+          "fwd_peak1_rate": 0.03875968992248062,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.11627906976744186,
+          "C2_random": 0.12906976744186047,
+          "C3_nearest": 0.031007751937984496,
+          "beats": {
+            "vs_C0_anchor": true,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": true
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 129,
+              "n_clusters": 72,
+              "delta": 0.03875968992248062,
+              "ci95": [
+                0.007246376811594203,
+                0.08396946564885496
+              ],
+              "excludes_zero": true
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 129,
+              "n_clusters": 72,
+              "delta": 0.007751937984496124,
+              "ci95": [
+                0.0,
+                0.025423728813559324
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 129,
+              "n_clusters": 72,
+              "delta": -0.07751937984496124,
+              "ci95": [
+                -0.1391304347826087,
+                -0.02158273381294964
+              ],
+              "excludes_zero": true,
+              "offset_s": 5.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        },
+        "TP": {
+          "fwd_peak1_rate": 0.0,
+          "C0_anchor": 0.0,
+          "C1_best_fwd": 0.07692307692307693,
+          "C2_random": 0.1076923076923077,
+          "C3_nearest": 0.0,
+          "beats": {
+            "vs_C0_anchor": false,
+            "vs_C1_best_fixed_offset": false,
+            "vs_C2_random_survivor": false,
+            "vs_C3_nearest_survivor": false
+          },
+          "beats_all_three_controls": false,
+          "paired_ci": {
+            "vs_C0_anchor": {
+              "n": 13,
+              "n_clusters": 12,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C3_nearest_survivor": {
+              "n": 13,
+              "n_clusters": 12,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "excludes_zero": false
+            },
+            "vs_C1_best_fixed_offset": {
+              "n": 13,
+              "n_clusters": 12,
+              "delta": -0.07692307692307693,
+              "ci95": [
+                -0.25,
+                0.0
+              ],
+              "excludes_zero": false,
+              "offset_s": 1.0
+            }
+          },
+          "beats_all_three_controls_significant": false
+        }
+      }
+    }
+  }
+}

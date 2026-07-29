@@ -1,0 +1,12 @@
+# PHASE 1 -- codec-boundary diagnostic (#5). Retrieval only, no LLM.
+# Protected-artifact snapshot before any work:
+python scripts/protected_hashes.py tuning/codec_boundary/protected_hashes_before.txt
+
+# One consolidated run: both splits, one retrieval pass per question, every
+# candidate and control derived from it.
+python scripts/codec_boundary_diagnostic.py --splits val_tune val_confirm
+
+# Snapshot after:
+python scripts/protected_hashes.py tuning/codec_boundary/protected_hashes_after.txt
+diff tuning/codec_boundary/protected_hashes_before.txt \
+     tuning/codec_boundary/protected_hashes_after.txt
