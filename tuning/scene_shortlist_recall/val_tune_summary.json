@@ -1,0 +1,702 @@
+{
+  "split": "val_tune",
+  "config_hash": "cab2bac1628012a3",
+  "cache_dir": "/home/ccbd/IRIS-1/tuning/index_cache",
+  "n_questions": 2685,
+  "n_videos": 450,
+  "reconstruction_verification": {
+    "n_matched": 20,
+    "n_sampled": 20,
+    "detail": [
+      {
+        "video": "10030609934",
+        "qid": "4",
+        "match": true,
+        "n_prod": 6,
+        "n_mine": 6,
+        "fallback": false
+      },
+      {
+        "video": "10030609934",
+        "qid": "9",
+        "match": true,
+        "n_prod": 6,
+        "n_mine": 6,
+        "fallback": false
+      },
+      {
+        "video": "10042935613",
+        "qid": "8",
+        "match": true,
+        "n_prod": 7,
+        "n_mine": 7,
+        "fallback": false
+      },
+      {
+        "video": "10082798964",
+        "qid": "5",
+        "match": true,
+        "n_prod": 4,
+        "n_mine": 4,
+        "fallback": false
+      },
+      {
+        "video": "10309542255",
+        "qid": "5",
+        "match": true,
+        "n_prod": 9,
+        "n_mine": 9,
+        "fallback": false
+      },
+      {
+        "video": "10607095936",
+        "qid": "5",
+        "match": true,
+        "n_prod": 5,
+        "n_mine": 5,
+        "fallback": false
+      },
+      {
+        "video": "10779838974",
+        "qid": "4",
+        "match": true,
+        "n_prod": 5,
+        "n_mine": 5,
+        "fallback": false
+      },
+      {
+        "video": "11244289523",
+        "qid": "2",
+        "match": true,
+        "n_prod": 4,
+        "n_mine": 4,
+        "fallback": false
+      },
+      {
+        "video": "11541421563",
+        "qid": "8",
+        "match": true,
+        "n_prod": 9,
+        "n_mine": 9,
+        "fallback": false
+      },
+      {
+        "video": "11566930393",
+        "qid": "5",
+        "match": true,
+        "n_prod": 5,
+        "n_mine": 5,
+        "fallback": false
+      },
+      {
+        "video": "11566980553",
+        "qid": "9",
+        "match": true,
+        "n_prod": 6,
+        "n_mine": 6,
+        "fallback": false
+      },
+      {
+        "video": "11681746823",
+        "qid": "8",
+        "match": true,
+        "n_prod": 4,
+        "n_mine": 4,
+        "fallback": false
+      },
+      {
+        "video": "11871253306",
+        "qid": "1",
+        "match": true,
+        "n_prod": 6,
+        "n_mine": 6,
+        "fallback": false
+      },
+      {
+        "video": "11966080214",
+        "qid": "0",
+        "match": true,
+        "n_prod": 7,
+        "n_mine": 7,
+        "fallback": false
+      },
+      {
+        "video": "12392885583",
+        "qid": "5",
+        "match": true,
+        "n_prod": 5,
+        "n_mine": 5,
+        "fallback": false
+      },
+      {
+        "video": "12682618843",
+        "qid": "1",
+        "match": true,
+        "n_prod": 6,
+        "n_mine": 6,
+        "fallback": false
+      },
+      {
+        "video": "13569831214",
+        "qid": "4",
+        "match": true,
+        "n_prod": 7,
+        "n_mine": 7,
+        "fallback": false
+      },
+      {
+        "video": "13919236672",
+        "qid": "6",
+        "match": true,
+        "n_prod": 10,
+        "n_mine": 10,
+        "fallback": false
+      },
+      {
+        "video": "14003541505",
+        "qid": "3",
+        "match": true,
+        "n_prod": 4,
+        "n_mine": 4,
+        "fallback": false
+      },
+      {
+        "video": "2400171624",
+        "qid": "1",
+        "match": true,
+        "n_prod": 5,
+        "n_mine": 5,
+        "fallback": false
+      }
+    ]
+  },
+  "failure_modes": {
+    "videos_missing_from_cache": [],
+    "questions_without_centroids": [],
+    "questions_with_zero_gold_scenes": [
+      {
+        "video_id": "4838145161",
+        "qid": "7",
+        "span_len_s": 0.4,
+        "n_scenes": 38,
+        "n_admitted_frames": 257
+      },
+      {
+        "video_id": "7001078933",
+        "qid": "2",
+        "span_len_s": 0.6,
+        "n_scenes": 13,
+        "n_admitted_frames": 86
+      },
+      {
+        "video_id": "7164729910",
+        "qid": "8",
+        "span_len_s": 0.4,
+        "n_scenes": 19,
+        "n_admitted_frames": 88
+      },
+      {
+        "video_id": "7164729910",
+        "qid": "5",
+        "span_len_s": 0.4,
+        "n_scenes": 19,
+        "n_admitted_frames": 88
+      }
+    ],
+    "n_zero_gold_scenes": 4
+  },
+  "headline": {
+    "hit_at_shortlist": {
+      "rate": 0.735195530726257,
+      "n": 2685,
+      "n_hit": 1974,
+      "ci95": [
+        0.7182,
+        0.7515
+      ]
+    },
+    "effective_hit": {
+      "rate": 0.7359404096834264,
+      "n": 2685,
+      "n_hit": 1976,
+      "ci95": [
+        0.7189,
+        0.7523
+      ]
+    },
+    "hit_at_shortlist_anyspan_variant": {
+      "rate": 0.7567970204841713,
+      "n": 2685,
+      "n_hit": 2032,
+      "ci95": [
+        0.7402,
+        0.7727
+      ]
+    }
+  },
+  "breakdown_hit_at_shortlist": {
+    "overall": {
+      "rate": 0.735195530726257,
+      "n": 2685,
+      "n_hit": 1974,
+      "ci95": [
+        0.7182,
+        0.7515
+      ]
+    },
+    "by_family": {
+      "causal": {
+        "rate": 0.7506393861892583,
+        "n": 1564,
+        "n_hit": 1174,
+        "ci95": [
+          0.7286,
+          0.7714
+        ]
+      },
+      "temporal": {
+        "rate": 0.7136485280999108,
+        "n": 1121,
+        "n_hit": 800,
+        "ci95": [
+          0.6865,
+          0.7393
+        ]
+      },
+      "other": {
+        "rate": null,
+        "n": 0,
+        "n_hit": 0
+      }
+    },
+    "by_type": {
+      "CH": {
+        "rate": 0.7627551020408163,
+        "n": 392,
+        "n_hit": 299,
+        "ci95": [
+          0.7182,
+          0.8022
+        ]
+      },
+      "CW": {
+        "rate": 0.7465870307167235,
+        "n": 1172,
+        "n_hit": 875,
+        "ci95": [
+          0.7209,
+          0.7707
+        ]
+      },
+      "TC": {
+        "rate": 0.7605263157894737,
+        "n": 380,
+        "n_hit": 289,
+        "ci95": [
+          0.7151,
+          0.8007
+        ]
+      },
+      "TN": {
+        "rate": 0.6946022727272727,
+        "n": 704,
+        "n_hit": 489,
+        "ci95": [
+          0.6596,
+          0.7275
+        ]
+      },
+      "TP": {
+        "rate": 0.5945945945945946,
+        "n": 37,
+        "n_hit": 22,
+        "ci95": [
+          0.4349,
+          0.7365
+        ]
+      }
+    },
+    "by_span_bucket": {
+      "short": {
+        "rate": 0.5860655737704918,
+        "n": 488,
+        "n_hit": 286,
+        "ci95": [
+          0.5419,
+          0.6289
+        ]
+      },
+      "long": {
+        "rate": 0.7683204369594903,
+        "n": 2197,
+        "n_hit": 1688,
+        "ci95": [
+          0.7502,
+          0.7855
+        ]
+      }
+    },
+    "by_n_scenes_quartile": {
+      "Q1": {
+        "rate": 0.8427299703264095,
+        "n": 674,
+        "n_hit": 568,
+        "ci95": [
+          0.8133,
+          0.8683
+        ]
+      },
+      "Q2": {
+        "rate": 0.7541899441340782,
+        "n": 716,
+        "n_hit": 540,
+        "ci95": [
+          0.7214,
+          0.7843
+        ]
+      },
+      "Q3": {
+        "rate": 0.7078313253012049,
+        "n": 664,
+        "n_hit": 470,
+        "ci95": [
+          0.6721,
+          0.7411
+        ]
+      },
+      "Q4": {
+        "rate": 0.6275752773375595,
+        "n": 631,
+        "n_hit": 396,
+        "ci95": [
+          0.5892,
+          0.6644
+        ]
+      }
+    }
+  },
+  "breakdown_effective_hit": {
+    "overall": {
+      "rate": 0.7359404096834264,
+      "n": 2685,
+      "n_hit": 1976,
+      "ci95": [
+        0.7189,
+        0.7523
+      ]
+    },
+    "by_family": {
+      "causal": {
+        "rate": 0.7512787723785166,
+        "n": 1564,
+        "n_hit": 1175,
+        "ci95": [
+          0.7293,
+          0.7721
+        ]
+      },
+      "temporal": {
+        "rate": 0.7145405887600357,
+        "n": 1121,
+        "n_hit": 801,
+        "ci95": [
+          0.6874,
+          0.7402
+        ]
+      },
+      "other": {
+        "rate": null,
+        "n": 0,
+        "n_hit": 0
+      }
+    },
+    "by_type": {
+      "CH": {
+        "rate": 0.7627551020408163,
+        "n": 392,
+        "n_hit": 299,
+        "ci95": [
+          0.7182,
+          0.8022
+        ]
+      },
+      "CW": {
+        "rate": 0.7474402730375427,
+        "n": 1172,
+        "n_hit": 876,
+        "ci95": [
+          0.7218,
+          0.7715
+        ]
+      },
+      "TC": {
+        "rate": 0.7605263157894737,
+        "n": 380,
+        "n_hit": 289,
+        "ci95": [
+          0.7151,
+          0.8007
+        ]
+      },
+      "TN": {
+        "rate": 0.6960227272727273,
+        "n": 704,
+        "n_hit": 490,
+        "ci95": [
+          0.6611,
+          0.7289
+        ]
+      },
+      "TP": {
+        "rate": 0.5945945945945946,
+        "n": 37,
+        "n_hit": 22,
+        "ci95": [
+          0.4349,
+          0.7365
+        ]
+      }
+    },
+    "by_span_bucket": {
+      "short": {
+        "rate": 0.5860655737704918,
+        "n": 488,
+        "n_hit": 286,
+        "ci95": [
+          0.5419,
+          0.6289
+        ]
+      },
+      "long": {
+        "rate": 0.7692307692307693,
+        "n": 2197,
+        "n_hit": 1690,
+        "ci95": [
+          0.7512,
+          0.7864
+        ]
+      }
+    },
+    "by_n_scenes_quartile": {
+      "Q1": {
+        "rate": 0.8427299703264095,
+        "n": 674,
+        "n_hit": 568,
+        "ci95": [
+          0.8133,
+          0.8683
+        ]
+      },
+      "Q2": {
+        "rate": 0.7541899441340782,
+        "n": 716,
+        "n_hit": 540,
+        "ci95": [
+          0.7214,
+          0.7843
+        ]
+      },
+      "Q3": {
+        "rate": 0.7108433734939759,
+        "n": 664,
+        "n_hit": 472,
+        "ci95": [
+          0.6752,
+          0.744
+        ]
+      },
+      "Q4": {
+        "rate": 0.6275752773375595,
+        "n": 631,
+        "n_hit": 396,
+        "ci95": [
+          0.5892,
+          0.6644
+        ]
+      }
+    }
+  },
+  "gold_scene_counts": {
+    "mean": 6.022,
+    "median": 4,
+    "min": 0,
+    "max": 73
+  },
+  "n_scenes_stats": {
+    "mean": 30.51,
+    "median": 25,
+    "min": 3,
+    "max": 89,
+    "quartile_cuts": [
+      15,
+      25,
+      43
+    ]
+  },
+  "shortlist_width_stats": {
+    "mean": 5.778,
+    "median": 5,
+    "min": 3,
+    "max": 10,
+    "mean_frac_of_scenes": 0.2435
+  },
+  "frac_gold_captured": {
+    "mean": 0.3672,
+    "median": 0.3333
+  },
+  "best_gold_rank": {
+    "n": 2681,
+    "median": 3,
+    "p90": 13,
+    "p99": 34,
+    "max": 74,
+    "mean": 5.288,
+    "histogram": {
+      "1": 932,
+      "2": 374,
+      "3": 266,
+      "4": 180,
+      "5": 150,
+      "6": 116,
+      "7": 86,
+      "8": 72,
+      "9": 68,
+      "10": 57,
+      "11": 47,
+      "12": 35,
+      "13": 39,
+      "14": 28,
+      "15": 22,
+      "16": 24,
+      "17": 32,
+      "18": 23,
+      "19": 15,
+      "20": 9,
+      "21": 17,
+      "22": 10,
+      "23": 6,
+      "24": 8,
+      "25": 4,
+      "26": 5,
+      "27": 4,
+      "28": 3,
+      "29": 7,
+      "30": 4,
+      "31": 1,
+      "32": 4,
+      "33": 5,
+      "34": 2,
+      "35": 1,
+      "36": 5,
+      "37": 2,
+      "38": 1,
+      "39": 2,
+      "40": 2,
+      "42": 1,
+      "43": 3,
+      "44": 1,
+      "48": 1,
+      "49": 1,
+      "54": 1,
+      "55": 1,
+      "57": 2,
+      "61": 1,
+      "74": 1
+    }
+  },
+  "miss_rank_profile": {
+    "n_misses": 707,
+    "miss_best_gold_ranks_median": 11,
+    "miss_overshoot_over_cutoff": {
+      "n": 707,
+      "median": 5,
+      "p90": 16,
+      "max": 64,
+      "buckets": {
+        "1-5": 385,
+        "6-20": 277,
+        "51-100": 2,
+        "21-50": 43
+      }
+    }
+  },
+  "fallback_rates": {
+    "scene001_all_scenes_pct": 0.1862,
+    "empty_pool_pct": 0.0,
+    "either_pct": 0.1862
+  },
+  "width_sweep": {
+    "ceil_sqrt_N__production": {
+      "mean_width": 5.778,
+      "recall": 0.735195530726257,
+      "n_hit": 1974,
+      "n_total": 2685,
+      "ci95": [
+        0.7182,
+        0.7515
+      ],
+      "mean_pool_frames": 40.57,
+      "median_pool_frames": 36
+    },
+    "2x_ceil_sqrt_N": {
+      "mean_width": 11.396,
+      "recall": 0.8890130353817505,
+      "n_hit": 2387,
+      "n_total": 2685,
+      "ci95": [
+        0.8766,
+        0.9003
+      ],
+      "mean_pool_frames": 73.64,
+      "median_pool_frames": 68
+    },
+    "4x_ceil_sqrt_N": {
+      "mean_width": 21.73,
+      "recall": 0.984729981378026,
+      "n_hit": 2644,
+      "n_total": 2685,
+      "ci95": [
+        0.9794,
+        0.9887
+      ],
+      "mean_pool_frames": 127.2,
+      "median_pool_frames": 121
+    },
+    "ceil_N_over_4": {
+      "mean_width": 8.0,
+      "recall": 0.7828677839851024,
+      "n_hit": 2102,
+      "n_total": 2685,
+      "ci95": [
+        0.7669,
+        0.7981
+      ],
+      "mean_pool_frames": 53.37,
+      "median_pool_frames": 44
+    },
+    "ceil_N_over_2": {
+      "mean_width": 15.512,
+      "recall": 0.9288640595903166,
+      "n_hit": 2494,
+      "n_total": 2685,
+      "ci95": [
+        0.9185,
+        0.938
+      ],
+      "mean_pool_frames": 95.68,
+      "median_pool_frames": 80
+    },
+    "N_all_scenes": {
+      "mean_width": 30.509,
+      "recall": 0.9985102420856611,
+      "n_hit": 2681,
+      "n_total": 2685,
+      "ci95": [
+        0.9962,
+        0.9994
+      ],
+      "mean_pool_frames": 166.41,
+      "median_pool_frames": 138
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "iris/scene_retrieval.py": "1cd1361df16f2220560ae5f38e7672923200dcf7154cfabc003c4de549565921",
+  "scripts/part3_tune.py": "dcdbc55920fc780277eccb15a21f4f6344dca7eada36f1daaefbde438caaeac6",
+  "scripts/val_confirm_e2e_eval.py": "e2efa4c036a173a951a9747e95344eb0ec971b03e6664adc1430889135fbb14e",
+  "scripts/parta_survivor_ceiling.py": "d3d5e709c2004efa7bc223b80f53b1c1ccb2a8b0b71863f27147219594c35400",
+  "eval/data/nextqa/val.csv": "ee0ef210ae341bec53fdeb723ae54958307ed2e49988d2d3763d3c22abf4201a",
+  "eval/data/nextqa/gsub_val.json": "527f402851836224aa03c9d4b0016b858a678d21596a2348eb2bdb774c74970a",
+  "eval/data/nextqa/gsub_test.json": "0c16c31699238a0f2b8ace45aeed7f193149ce2f011d6ed4f1ef7170ef5d41e9",
+  "split_manifest.json": "7864ba3692234320fc453573d6fa8be5e12779f222fd99a841c63a745e98f12a",
+  "tuning/frozen_state.json": "612a93ba88af53eff17d766885dd3bcf8f65e502e4822b60c1a5c04db4c0b1b7",
+  "survivor_coverage_ceiling_report.md": "69a4795101390c8040a7eb39e8587409b6c286fb05ae0467563993cfe7b8a3df",
+  "tuning/val_confirm_gap_diagnostic_report.md": "bb3a2b0066a0f3768569b5294c19f68ff2e3bbec3d6d044d247eeee779943496",
+  "tuning/val_confirm_e2e_per_question_gap_diagnostic.csv": "4c1c73c294dd6156ecdb405f77f46daf0cc1062c4f8feb322c2bc531fae8722f"
+}

@@ -1,0 +1,13 @@
+split,width_rule,mean_width,recall,n_hit,n_total,ci95_lo,ci95_hi,mean_pool_frames,median_pool_frames
+val_tune,ceil_sqrt_N__production,5.778,0.735196,1974,2685,0.7182,0.7515,40.57,36
+val_tune,2x_ceil_sqrt_N,11.396,0.889013,2387,2685,0.8766,0.9003,73.64,68
+val_tune,4x_ceil_sqrt_N,21.73,0.98473,2644,2685,0.9794,0.9887,127.2,121
+val_tune,ceil_N_over_4,8.0,0.782868,2102,2685,0.7669,0.7981,53.37,44
+val_tune,ceil_N_over_2,15.512,0.928864,2494,2685,0.9185,0.938,95.68,80
+val_tune,N_all_scenes,30.509,0.99851,2681,2685,0.9962,0.9994,166.41,138
+val_confirm,ceil_sqrt_N__production,5.84,0.732394,468,639,0.6968,0.7653,40.19,36
+val_confirm,2x_ceil_sqrt_N,11.509,0.898279,574,639,0.8724,0.9194,74.13,67
+val_confirm,4x_ceil_sqrt_N,22.047,0.98748,631,639,0.9755,0.9936,130.51,122
+val_confirm,ceil_N_over_4,8.08,0.782473,500,639,0.7488,0.8127,53.42,45
+val_confirm,ceil_N_over_2,15.679,0.940532,601,639,0.9194,0.9564,97.69,79
+val_confirm,N_all_scenes,30.829,1.0,639,639,0.994,1.0,170.95,151
