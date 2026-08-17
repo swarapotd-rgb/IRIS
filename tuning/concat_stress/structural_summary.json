@@ -1,0 +1,273 @@
+{
+  "n_rows": 13535,
+  "n_cache_dirs": 14,
+  "skipped": [
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/10174992863.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/10316970886.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/10495085476.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/11155395153.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/11982334506.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/12011352464.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/12068876905.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/12078592673.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/13166998645.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/13496784364.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2482233944.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2499564345.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2513624400.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2732002300.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2770243170.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2786223802.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2792202513.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2818950014.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2881352518.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/2924847675.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3003152116.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3079724515.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3205604574.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3223951946.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3230196661.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3329878386.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3357799819.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3375064270.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3375723261.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3381602382.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3384417792.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3480618846.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3561135916.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3621121750.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/3692009167.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4097448142.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4173145252.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4198999510.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4226455621.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4250191168.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4430422083.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4440840337.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4484729539.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4607629530.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4608963318.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4631119360.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4642870129.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4740345442.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4811179274.npz",
+      "reason": "zero_scenes"
+    },
+    {
+      "path": "/home/ccbd/IRIS/eval/data/nextqa/index_cache/4825019426.npz",
+      "reason": "zero_scenes"
+    }
+  ],
+  "n_skipped": 90,
+  "corpora_found": [
+    "nextqa_other",
+    "nextqa_val_confirm",
+    "nextqa_val_tune"
+  ],
+  "by_scene_bucket": {
+    "0-10": {
+      "n": 1183,
+      "mean_n_scenes": 7.13,
+      "mean_fraction_kept": 0.5944
+    },
+    "10-20": {
+      "n": 4312,
+      "mean_n_scenes": 14.39,
+      "mean_fraction_kept": 0.3042
+    },
+    "20-40": {
+      "n": 4540,
+      "mean_n_scenes": 28.02,
+      "mean_fraction_kept": 0.2073
+    },
+    "40-80": {
+      "n": 3351,
+      "mean_n_scenes": 54.07,
+      "mean_fraction_kept": 0.1462
+    },
+    "80-160": {
+      "n": 149,
+      "mean_n_scenes": 85.98,
+      "mean_fraction_kept": 0.1173
+    }
+  },
+  "by_corpus": {
+    "nextqa_other": {
+      "n": 11712,
+      "mean_n_scenes": 28.81,
+      "max_n_scenes": 89,
+      "mean_fraction_kept": 0.2573
+    },
+    "nextqa_val_confirm": {
+      "n": 923,
+      "mean_n_scenes": 29.79,
+      "max_n_scenes": 126,
+      "mean_fraction_kept": 0.2476
+    },
+    "nextqa_val_tune": {
+      "n": 900,
+      "mean_n_scenes": 29.72,
+      "max_n_scenes": 89,
+      "mean_fraction_kept": 0.246
+    }
+  },
+  "extremes": {
+    "smallest": {
+      "video_id": "3524939594",
+      "n_scenes": 1,
+      "shortlist_width": 1,
+      "fraction_kept": 1.0
+    },
+    "largest": {
+      "video_id": "13884293626",
+      "n_scenes": 126,
+      "shortlist_width": 12,
+      "fraction_kept": 0.095238
+    }
+  }
+}
