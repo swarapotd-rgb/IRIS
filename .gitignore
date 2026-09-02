@@ -41,3 +41,14 @@ external_data/qvhighlights/annotations/
 *.part
 !external_data/qvhighlights/logs/
 !external_data/qvhighlights/logs/setup_output.txt
+
+# Ego4D external dataset: licence forbids redistributing video. Keep manifests/docs only.
+external_data/ego4d/v2/
+external_data/ego4d/*/annotations/
+external_data/ego4d/*/clips/
+external_data/ego4d/*/full_scale/
+!external_data/ego4d/manifests/
+!external_data/ego4d/logs/
+
+# Session scratch prompts and working files -- not part of the project.
+scratch/
